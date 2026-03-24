@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed": "#ffdbc8",
+              "secondary-container": "#fb7800",
+              "on-secondary-container": "#592600",
+              "primary": "#006e2f",
+              "tertiary-fixed": "#6ffbbe",
+              "on-tertiary-fixed": "#002113",
+              "on-tertiary-container": "#004a31",
+              "surface-container": "#eaedff",
+              "on-tertiary-fixed-variant": "#005236",
+              "on-surface": "#131b2e",
+              "error-container": "#ffdad6",
+              "surface-container-low": "#f2f3ff",
+              "surface-container-highest": "#dae2fd",
+              "inverse-surface": "#283044",
+              "inverse-on-surface": "#eef0ff",
+              "surface-dim": "#d2d9f4",
+              "outline": "#6d7b6c",
+              "on-secondary-fixed": "#321200",
+              "on-background": "#131b2e",
+              "primary-container": "#22c55e",
+              "surface-variant": "#dae2fd",
+              "surface-tint": "#006e2f",
+              "background": "#faf8ff",
+              "on-secondary-fixed-variant": "#753400",
+              "on-primary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-tertiary": "#ffffff",
+              "on-primary-container": "#004b1e",
+              "primary-fixed": "#6bff8f",
+              "primary-fixed-dim": "#4ae176",
+              "secondary-fixed-dim": "#ffb68b",
+              "tertiary-fixed-dim": "#4edea3",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed-variant": "#005321",
+              "inverse-primary": "#4ae176",
+              "error": "#ba1a1a",
+              "surface-container-high": "#e2e7ff",
+              "on-primary-fixed": "#002109",
+              "on-error": "#ffffff",
+              "surface-bright": "#faf8ff",
+              "outline-variant": "#bccbb9",
+              "tertiary-container": "#28c38a",
+              "surface": "#faf8ff",
+              "secondary": "#994700",
+              "on-surface-variant": "#3d4a3d",
+              "tertiary": "#006c49"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(250, 248, 255, 0.8);
+        backdrop-filter: blur(12px);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary">
+<!-- Top Navigation Anchor -->
+<header class="fixed top-0 w-full z-50 shadow-sm glass-nav">
+<div class="flex items-center justify-between px-6 h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-green-700 active:scale-95 duration-200 transition-opacity hover:opacity-80">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-headline font-bold tracking-tight text-green-700">Coming Soon</h1>
+</div>
+<div class="text-xl font-extrabold text-green-700">FreshRush</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-16">
+<h2 class="font-headline text-[3.5rem] leading-[1.1] font-extrabold tracking-tight text-on-surface mb-4">
+                More Freshness <br/>
+<span class="bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent">is on the Way!</span>
+</h2>
+<p class="font-body text-lg text-on-surface-variant max-w-2xl opacity-80">
+                We're expanding our pantry to bring you everything you need, from daily essentials to artisanal treats. Be the first to know when we launch these categories.
+            </p>
+</section>
+<!-- Bento Grid / Category Display -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Category Card: Groceries -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Fresh Groceries" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90 brightness-75" data-alt="Close-up of a rustic wooden crate filled with vibrant organic vegetables like carrots, bell peppers, and leafy greens in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV8HiwJNtLARmXEivn-AXuVMjFf_qHqnIeBfrtBnvOKKf_t1ZLN3kYF8f6ohBbz82N2mWa0yqvXFF8_qi3iVIAh4mSqzMs9yNj0tnWV2dBTrfNnSRxZAq-DbxZwrtItxWUFXLv40Bq5XEGBqu5Bgy_I5moNJXn5urGPGKRp3U6Iv2N5Rbdjnjp0wxbNAZMeC2y6uuMJ4OFkJc6DSJoSuFNZEF2CNhU0TlFSfMSDr-UNGtOof9VP3QmhKyesaXxOygEyJq7aIC9Rbs"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full text-xs font-bold font-label uppercase tracking-widest">Coming Soon</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl font-bold mb-2">Groceries</h3>
+<p class="text-on-surface-variant body-md mb-6 leading-relaxed">
+                        Hand-picked fresh fruits, seasonal vegetables, and your favorite daily pantry essentials delivered from local farms.
+                    </p>
+<button class="w-full py-4 px-6 bg-surface-container-high text-on-primary-container rounded-DEFAULT font-semibold flex items-center justify-center gap-2 hover:bg-primary-container hover:text-white transition-colors duration-200">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+                        Notify Me
+                    </button>
+</div>
+</div>
+<!-- Category Card: Pharmacy -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Healthcare products" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90 brightness-75" data-alt="Clean and minimal pharmaceutical display with medicine bottles and healthcare products on a pristine white surface with clinical lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvRdnLiDltEOsOvgEItD3XkPr31TrEqNxiebzj59Hj4kGRphPAytxK-Orkwo7m655JK6iW17nVYjiDaKEQaeI_ReLiKXbrhMpcsFQsSbuyLsbOe2jwcSeD7334TqgQSf7pc9Jluj_2SptnBUhG8vQvIpBvrzpbpCHbiO85JrJj_nx6q3uSfjj_V0khMPKGmEHZ9_2a0kfTSahJOi1VdKjeAuxbFn18jpQUkjdJLMF_0xp1HIVZ_DEVUDog9SNLlehmtXFP29pCtFo"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary-container text-white px-4 py-1 rounded-full text-xs font-bold font-label uppercase tracking-widest">Coming Your Way</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl font-bold mb-2">Pharmacy</h3>
+<p class="text-on-surface-variant body-md mb-6 leading-relaxed">
+                        Trusted medicine, wellness supplements, and essential healthcare products delivered safely to your doorstep.
+                    </p>
+<button class="w-full py-4 px-6 bg-surface-container-high text-on-primary-container rounded-DEFAULT font-semibold flex items-center justify-center gap-2 hover:bg-primary-container hover:text-white transition-colors duration-200">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+                        Notify Me
+                    </button>
+</div>
+</div>
+<!-- Category Card: Bakery -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Artisanal Bakery" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90 brightness-75" data-alt="Freshly baked artisan sourdough bread and golden croissants on a marble counter with a light dusting of flour and warm bakery lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmOyMl5KQL05eb5TAIMd4doTM1WMD4c7THYyE1gVafkGkFw5HEGxPxrRYqJsUntq83Nh9zkHtn3uRVcEEOPgE4_eYByHwD878VYo9LbTpgZ3MnAtWxBH09Fri9W9HrEn_w__XCltzE9vwXaAKTUOe5jKgDJXWFPZLbVB2PuwAWG4JVG9PpqoHhwHzjIamkvAv2Yv3wgGaiN_0TJQdZgxQBDqrsaH0_s8FOTKzHEoamN7bknuh0foGEgLXUXnaqSqaEkZVzsLcLaZc"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full text-xs font-bold font-label uppercase tracking-widest">Coming Soon</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl font-bold mb-2">Bakery</h3>
+<p class="text-on-surface-variant body-md mb-6 leading-relaxed">
+                        Cakes, warm sourdough bread, and artisanal bakes crafted daily by the finest local pastry chefs.
+                    </p>
+<button class="w-full py-4 px-6 bg-surface-container-high text-on-primary-container rounded-DEFAULT font-semibold flex items-center justify-center gap-2 hover:bg-primary-container hover:text-white transition-colors duration-200">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+                        Notify Me
+                    </button>
+</div>
+</div>
+<!-- Category Card: Meat & Fish -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Fresh Protein" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90 brightness-75" data-alt="Premium cuts of marbled raw beef and fresh salmon fillets on a dark stone slab with sprigs of rosemary and crushed peppercorns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTsPRdbzs-IzooJsEo_MEbLcPsUn52o1LL20VdXuT1C9P_bATME9LoB2SlqtD8R8D5YtIiZe67YRGZP_G6bpXcuKpbth0e43ux5pjytjanAhPLTG52Vze9dp4YCALKAwSWpqPY5fGZL2qE3pBGICu6h-knttiEhplZdPXRsRB-sa83XbLbYWdGw-1dykVma_wiBUvd9kSDdOoB15Ja7mT7-SjgP42co8ZeB8BiUA6bVnuIDBaYhTuE8jFX0ZXakOdGZ7NRjSXMTn4"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary-container text-white px-4 py-1 rounded-full text-xs font-bold font-label uppercase tracking-widest">Coming Your Way</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl font-bold mb-2">Meat &amp; Fish</h3>
+<p class="text-on-surface-variant body-md mb-6 leading-relaxed">
+                        Premium cuts and freshly caught seafood sourced responsibly for your family's table.
+                    </p>
+<button class="w-full py-4 px-6 bg-surface-container-high text-on-primary-container rounded-DEFAULT font-semibold flex items-center justify-center gap-2 hover:bg-primary-container hover:text-white transition-colors duration-200">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+                        Notify Me
+                    </button>
+</div>
+</div>
+<!-- Category Card: Pet Supplies -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Pet Supplies" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90 brightness-75" data-alt="A happy golden retriever puppy sitting next to colorful pet toys and bowls in a bright, airy living room with soft sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMhpsAnvdExa0IGlxFAekADR6bxp8hiBc5YTq8vXOYJdWHWYFyJdaMzaBBtuxEVGe6nFg2WS_NGjZ3qjZp8yNzFe7Oln3wzPD9LIGFEKYBaleAkoDVDdFmgmi-LGvg3ypzEW_HRZYUAuj8c5ExgBr4HGelIdXR2uQrRSGPd8R9FsH1xCMnX_Vqs1Eg8rm8bNnH0sWU-Eeh8UkalMEJAof4ElJMGWElRf44qFJ8aqtKoiiqe6dLJ6kirvP26nsgoFmRWr-b_ZjMl4M"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary-container text-on-primary-container px-4 py-1 rounded-full text-xs font-bold font-label uppercase tracking-widest">Coming Soon</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl font-bold mb-2">Pet Supplies</h3>
+<p class="text-on-surface-variant body-md mb-6 leading-relaxed">
+                        Gourmet food, durable toys, and grooming essentials for your furry, feathered, or finned friends.
+                    </p>
+<button class="w-full py-4 px-6 bg-surface-container-high text-on-primary-container rounded-DEFAULT font-semibold flex items-center justify-center gap-2 hover:bg-primary-container hover:text-white transition-colors duration-200">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+                        Notify Me
+                    </button>
+</div>
+</div>
+<!-- Category Card: Gifts -->
+<div class="group relative overflow-hidden rounded-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img alt="Curated Gifts" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-90 brightness-75" data-alt="Beautifully wrapped gift boxes with silk ribbons and a bouquet of fresh pastel flowers on a light wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDktYFr9A85pWkPob_JiYRKu-uyQCXrKY2nHbX46vjz81IrIrN9Zfc54lPUAk-adlbr-Lt7rh4IlPenEphKUvWW5GOVr6y1Zx_P70LbN8VhN_dQFemT8sKdow_yllF9qFFaFCqcts_GeQdc8oxO4rqOMXxV2CrsxDxSY5rlE7dkhoWpIPj_bhRSB3W7xFEYPhNMP_UV1rt_6_o7mXFbYmZsz4l70DAvf-RnMdPXQFpIbL0I16BMx-foUfJwcm1QU4xjGu36335grT8"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary-container text-white px-4 py-1 rounded-full text-xs font-bold font-label uppercase tracking-widest">Coming Your Way</span>
+</div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl font-bold mb-2">Gifts</h3>
+<p class="text-on-surface-variant body-md mb-6 leading-relaxed">
+                        Curated gift boxes, fresh floral arrangements, and personalized treats for every special occasion.
+                    </p>
+<button class="w-full py-4 px-6 bg-surface-container-high text-on-primary-container rounded-DEFAULT font-semibold flex items-center justify-center gap-2 hover:bg-primary-container hover:text-white transition-colors duration-200">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+                        Notify Me
+                    </button>
+</div>
+</div>
+</div>
+<!-- Call to Action Section -->
+<section class="mt-24 rounded-xl p-12 bg-gradient-to-br from-primary to-primary-container text-white text-center">
+<h3 class="font-headline text-4xl font-extrabold mb-6">Want to stay updated?</h3>
+<p class="font-body text-lg opacity-90 mb-8 max-w-xl mx-auto">
+                Join our newsletter and be the first to receive exclusive launch offers and early access to our new categories.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
+<input class="flex-1 px-6 py-4 rounded-DEFAULT bg-white/10 border border-white/20 text-white placeholder:text-white/60 focus:outline-none focus:ring-2 focus:ring-white/50" placeholder="Enter your email" type="email"/>
+<button class="px-8 py-4 bg-white text-primary font-bold rounded-DEFAULT hover:bg-surface-container-lowest transition-colors active:scale-95 duration-150">
+                    Subscribe Now
+                </button>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 w-full z-50 rounded-t-[32px] bg-white shadow-[0_-4px_24px_rgba(19,27,46,0.08)] md:hidden">
+<div class="flex justify-around items-center w-full px-4 h-20 pb-2">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-slate-400 px-5 py-2 hover:text-green-500 transition-colors active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium">Home</span>
+</a>
+<!-- Browse (Active) -->
+<a class="flex flex-col items-center justify-center bg-green-500 text-white rounded-[20px] px-5 py-2 active:scale-90 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium">Browse</span>
+</a>
+<!-- Orders -->
+<a class="flex flex-col items-center justify-center text-slate-400 px-5 py-2 hover:text-green-500 transition-colors active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium">Orders</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-slate-400 px-5 py-2 hover:text-green-500 transition-colors active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium">Profile</span>
+</a>
+</div>
+</nav>
+</body></html>

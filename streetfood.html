@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Street Food - FreshRush</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-on-surface": "#eef0ff",
+              "secondary": "#994700",
+              "surface-container-low": "#f2f3ff",
+              "on-primary": "#ffffff",
+              "surface-container": "#eaedff",
+              "on-error-container": "#93000a",
+              "tertiary": "#006c49",
+              "error": "#ba1a1a",
+              "on-secondary-fixed": "#321200",
+              "inverse-surface": "#283044",
+              "on-primary-fixed": "#002109",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed": "#6bff8f",
+              "surface": "#faf8ff",
+              "secondary-fixed-dim": "#ffb68b",
+              "surface-variant": "#dae2fd",
+              "surface-dim": "#d2d9f4",
+              "on-primary-fixed-variant": "#005321",
+              "tertiary-container": "#28c38a",
+              "secondary-container": "#fb7800",
+              "tertiary-fixed": "#6ffbbe",
+              "primary-fixed-dim": "#4ae176",
+              "on-tertiary": "#ffffff",
+              "on-primary-container": "#004b1e",
+              "on-error": "#ffffff",
+              "surface-container-highest": "#dae2fd",
+              "background": "#faf8ff",
+              "on-tertiary-fixed-variant": "#005236",
+              "on-tertiary-fixed": "#002113",
+              "surface-container-high": "#e2e7ff",
+              "on-secondary": "#ffffff",
+              "on-secondary-fixed-variant": "#753400",
+              "on-background": "#131b2e",
+              "outline-variant": "#bccbb9",
+              "tertiary-fixed-dim": "#4edea3",
+              "surface-tint": "#006e2f",
+              "surface-bright": "#faf8ff",
+              "on-secondary-container": "#592600",
+              "on-surface-variant": "#3d4a3d",
+              "primary-container": "#22c55e",
+              "on-tertiary-container": "#004a31",
+              "outline": "#6d7b6c",
+              "on-surface": "#131b2e",
+              "secondary-fixed": "#ffdbc8",
+              "primary": "#006e2f",
+              "inverse-primary": "#4ae176",
+              "error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopAppBar Component -->
+<header class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none">
+<div class="flex items-center justify-between px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors p-2 rounded-full active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-green-700 dark:text-green-400">arrow_back</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-xl tracking-tight text-green-700 dark:text-green-400">Street Food</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors p-2 rounded-full active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined text-green-700 dark:text-green-400">search</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pb-32">
+<!-- Editorial Banner -->
+<section class="mt-6 mb-10">
+<div class="relative w-full h-[320px] rounded-xl overflow-hidden group">
+<img alt="Street Food Banner" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="vibrant overhead shot of multiple street food bowls featuring colorful spices, garnishes, and steaming hot textures on a dark rustic table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSMhWaMAoFdUbQkEjJoxVfuDRxJitHjhhf0fExxBPcf4nnVLuDjWjiRAjvT6nx-KArIUAuUbleQPXzH_Sel4hggjfcYmJk743Ak14UndGn0iUmJXIH6-9sXehT6UCdlXfVOhIFaHljNWEamrDUk9E-wvekKO2qmnQyJWKcpuALvPWTIwKgRWTFd5Jnq4nNz1BqtekcoXimbpJeAjTJQxgePOPa0Q2MhIZ7o95mvZqkl0Np-W03FTC_EMqEjynLWElOxWP1X78qQ-U"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent flex flex-col justify-end p-10">
+<span class="bg-secondary-container text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 self-start">Curated Gems</span>
+<h2 class="font-headline font-extrabold text-4xl md:text-5xl text-white leading-tight max-w-lg">Vibrant Flavors, Local Soul</h2>
+</div>
+</div>
+</section>
+<!-- Quick Filter Chips -->
+<section class="mb-10 overflow-x-auto hide-scrollbar -mx-6 px-6">
+<div class="flex gap-3 whitespace-nowrap">
+<button class="bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-semibold text-sm shadow-md">All Stalls</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-semibold text-sm hover:bg-primary/10 transition-colors">Spicy</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-semibold text-sm hover:bg-primary/10 transition-colors">Quick Bites</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-semibold text-sm hover:bg-primary/10 transition-colors">Budget Friendly</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-semibold text-sm hover:bg-primary/10 transition-colors">Popular</button>
+<button class="bg-surface-container-high text-on-surface-variant px-6 py-3 rounded-full font-semibold text-sm hover:bg-primary/10 transition-colors">Vegetarian</button>
+</div>
+</section>
+<!-- Street Food Stalls Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Spicy Samosa Corner -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-[0_24px_48px_rgba(19,27,46,0.08)]">
+<div class="relative h-64 overflow-hidden">
+<img alt="Spicy Samosas" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="close-up of golden crispy deep-fried samosas served with green spicy chutney and vibrant red tamarind sauce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmiSRSOZaq8xPZtzxZOjmsNsbM-IjFtDuD6GjnAHHBim66nns_0lnlpXzvWGvEo7QQoaR3q5XppC_c6bd2lySD-OJtVPUG-D3G17Us9P8oUGpFREehlEmfVHl43MZ6BQAatViqjKssf3AwHrm0WEOabhF5KFwj22QBpkxoZequjTaJ0xuaq6zCEBWiaJymaInoy5QEiDG-QFyvy4ewycK24F5R3ZY7YpphUc3eurxFMmACnr9k-66WgbwI0s3S4WLBGKmo4ecZaoA"/>
+<div class="absolute top-4 left-4 bg-secondary-container text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Local Favorite</div>
+<button class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full text-on-surface-variant hover:text-red-500 transition-colors shadow-sm">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-bold text-xl text-on-surface">Spicy Samosa Corner</h3>
+<div class="flex items-center gap-1 bg-green-50 px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-green-600 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-green-700">4.5</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4">North Indian • Samosas • Chaat</p>
+<div class="flex items-center justify-between border-t border-surface-container pt-4">
+<div class="flex items-center gap-4 text-xs font-medium text-slate-500">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 15-20 mins</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> 0.5 km</span>
+</div>
+<span class="text-green-700 font-bold">₹</span>
+</div>
+</div>
+</div>
+<!-- Card 2: The Chaat Stop -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-[0_24px_48px_rgba(19,27,46,0.08)]">
+<div class="relative h-64 overflow-hidden">
+<img alt="Chaat Plate" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="traditional dahi puri plate with crispy shells topped with yogurt, pomegranate seeds, and fresh sev garnish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB51y0BsSql7gKH-031Fw2cZ4Bj0mLEbwO1DPjoFk40Dk3DSnJaeRpKOLooo7vpvWh5oxHr3EtE9qgYp5Ib3N5pq99rSV1W3eR4eL5lJMl6LTOOASCutQXhm0AVxDd_0oPHdt9F4UpB20uoovB6AhgqO5ugc_VOZ8eWbO0-A_RHfK14W4gTohgCowGByOGi8_Cl9Tov7fswG9kT0C4B0gGFinkM18NkpUt0-XuPbPpbpOg-Q7tejdmY3Bau0PCAAKa6B2cUPapvYM8"/>
+<div class="absolute top-4 left-4 bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Best Seller</div>
+<button class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full text-on-surface-variant hover:text-red-500 transition-colors shadow-sm">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-bold text-xl text-on-surface">The Chaat Stop</h3>
+<div class="flex items-center gap-1 bg-green-50 px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-green-600 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-green-700">4.2</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4">Indian Street Food • Pani Puri</p>
+<div class="flex items-center justify-between border-t border-surface-container pt-4">
+<div class="flex items-center gap-4 text-xs font-medium text-slate-500">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 10-15 mins</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> 1.2 km</span>
+</div>
+<span class="text-green-700 font-bold">₹₹</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Taco Express -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-[0_24px_48px_rgba(19,27,46,0.08)]">
+<div class="relative h-64 overflow-hidden">
+<img alt="Mexican Tacos" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="authentic mexican street tacos with grilled meat, fresh cilantro, chopped onions, and lime wedges on a rustic wooden plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbPaajjGYMr2CiLKbm2TTffzKxsH_a7MVKIQMTarAmd1VdDo4jrMMVStEm9ijW8eNxZYaR5brPAQGu6BG6P97QpNr5Jycv8anAiay9K1iSQy7gd921Tk8zY-iiJtfe-A-fXltAvRoaGUaMQADf1WQAaRZROoBPaXE-mGr7QcnQN26E8oYoQAAwL7Ccwpe4AK0eDYuAwGkvbenxmemOAfceDALiiJe0DV8xeYhArxCtR1nno61L_5MaAqQalqwPtSQoDg7xKl6oo0k"/>
+<button class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full text-on-surface-variant hover:text-red-500 transition-colors shadow-sm">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-bold text-xl text-on-surface">Taco Express</h3>
+<div class="flex items-center gap-1 bg-green-50 px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-green-600 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-green-700">4.8</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4">Mexican • Tacos • Burritos</p>
+<div class="flex items-center justify-between border-t border-surface-container pt-4">
+<div class="flex items-center gap-4 text-xs font-medium text-slate-500">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 25-30 mins</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> 2.5 km</span>
+</div>
+<span class="text-green-700 font-bold">₹₹</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Momos Hub -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-[0_24px_48px_rgba(19,27,46,0.08)]">
+<div class="relative h-64 overflow-hidden">
+<img alt="Steamed Momos" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="steaming bamboo basket filled with perfectly pleated dim sums and a bowl of vibrant red chili dip" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoTCTYcr0qgpeyftnS3ymWsS8grqSRErptMXYndpfFr3mIecY4v7zv4auTwlOXogHGnRR0MU82cVy4rCMQjh34T8ZZUCLHU2VQpx6CpXpg7pLkhnsPEcJPuvsIw3QDcHyaE1hcqtomjnawCpRrNx3FPX19kQm_f81X0ZXRjE7nvv76Yz4EuVgilNZRbotakqPvBGEhHmVlMozMmQ2VthHjQ2NsVTQoEMEDiZwGVRExSIKaKnHlvQYVqSnvcqKBFHx518qQ-mjbWIo"/>
+<div class="absolute top-4 left-4 bg-secondary-container text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider">Rising Star</div>
+<button class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full text-on-surface-variant hover:text-red-500 transition-colors shadow-sm">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-bold text-xl text-on-surface">Momos Hub</h3>
+<div class="flex items-center gap-1 bg-green-50 px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-green-600 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-green-700">4.4</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4">Tibetan • Dumplings • Soup</p>
+<div class="flex items-center justify-between border-t border-surface-container pt-4">
+<div class="flex items-center gap-4 text-xs font-medium text-slate-500">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 20 mins</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> 0.8 km</span>
+</div>
+<span class="text-green-700 font-bold">₹</span>
+</div>
+</div>
+</div>
+<!-- Card 5: Kebab King -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-[0_24px_48px_rgba(19,27,46,0.08)]">
+<div class="relative h-64 overflow-hidden">
+<img alt="Grilled Kebabs" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="succulent skewers of grilled chicken kebabs being prepared over hot charcoal with smoke and sparks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq62SPcwHmCaSetp76dsw2oakFXX8CIfVgMBmxkWfKI_6T6sXzhxtjjU3F5J6a1C00J5hqpiy_aS7K-XnXcsvbCB4p9u7c2r5NJT9hmyI6PeYD90eKPbbwZEdthaNEMCj05bTTw_yZJV9zdwPmRQRwQ9wRJF-wSNc_U-GWqYwrEkEZRLC2-pIc5x2xOQTpFrCNSgPRU0AXcebMndKy07Ykw54o8BDlGmiaSRzgNDqcRYJiKQhHptCN4H_3Ld9MlrJYvgkO_p_RA0M"/>
+<button class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full text-on-surface-variant hover:text-red-500 transition-colors shadow-sm">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-bold text-xl text-on-surface">Kebab King</h3>
+<div class="flex items-center gap-1 bg-green-50 px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-green-600 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-green-700">4.6</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4">Mughlai • Grilled • Rolls</p>
+<div class="flex items-center justify-between border-t border-surface-container pt-4">
+<div class="flex items-center gap-4 text-xs font-medium text-slate-500">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 35 mins</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> 3.1 km</span>
+</div>
+<span class="text-green-700 font-bold">₹₹₹</span>
+</div>
+</div>
+</div>
+<!-- Card 6: Roll Factory -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden flex flex-col group transition-all duration-300 hover:shadow-[0_24px_48px_rgba(19,27,46,0.08)]">
+<div class="relative h-64 overflow-hidden">
+<img alt="Kathi Rolls" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="tightly wrapped kathi rolls sliced in half showing juicy paneer and vegetable filling with green garnish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdRVsrjT21eRKSnqWWHXwbjbOdzVXjaMdrTdlNm91_DkYOsmN32vDkKhIDm85wfMeVEA26jwb6efDVjBXUAXRO-ez2WEKt64y3rbguZl4DAYWoSN2BmGdIR1CyShKuVNfdIdmkp1It8zuwOHLEVXJL5NcUPaN1R3ciwn_xXzN4OlkPznoXIUNFW_ju2_KKOubb3Zg9M28feC6496EMDDfS71MXqzHIQOnZYlUDOsUlZEPQTInTvIn96y1X-FwGSDwsEfp5hg5IGsY"/>
+<button class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm p-2 rounded-full text-on-surface-variant hover:text-red-500 transition-colors shadow-sm">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline font-bold text-xl text-on-surface">Roll Factory</h3>
+<div class="flex items-center gap-1 bg-green-50 px-2 py-1 rounded-lg">
+<span class="material-symbols-outlined text-green-600 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs font-bold text-green-700">4.1</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-sm mb-4">Fast Food • Wraps • Shakes</p>
+<div class="flex items-center justify-between border-t border-surface-container pt-4">
+<div class="flex items-center gap-4 text-xs font-medium text-slate-500">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">schedule</span> 15 mins</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> 0.6 km</span>
+</div>
+<span class="text-green-700 font-bold">₹</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Component -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white dark:bg-slate-900 rounded-t-[32px] z-50 shadow-[0_-4px_24px_rgba(19,27,46,0.08)]">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-2 hover:text-green-500 dark:hover:text-green-400 transition-all active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">home</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium uppercase tracking-wider">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-green-500 dark:bg-green-600 text-white rounded-full p-3 mb-1 scale-110 shadow-lg shadow-green-200 active:scale-90 transition-all duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">search</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium uppercase tracking-wider">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-2 hover:text-green-500 dark:hover:text-green-400 transition-all active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">shopping_bag</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium uppercase tracking-wider">Orders</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-2 hover:text-green-500 dark:hover:text-green-400 transition-all active:scale-90 duration-300 ease-out" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium uppercase tracking-wider">Profile</span>
+</a>
+</nav>
+</body></html>

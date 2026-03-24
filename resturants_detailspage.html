@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Spice Gallery | FreshRush</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#ffffff",
+              "surface-bright": "#faf8ff",
+              "outline-variant": "#bccbb9",
+              "tertiary-container": "#28c38a",
+              "surface": "#faf8ff",
+              "on-surface-variant": "#3d4a3d",
+              "tertiary": "#006c49",
+              "secondary": "#994700",
+              "on-primary-container": "#004b1e",
+              "primary-fixed": "#6bff8f",
+              "primary-fixed-dim": "#4ae176",
+              "secondary-fixed-dim": "#ffb68b",
+              "tertiary-fixed-dim": "#4edea3",
+              "on-primary-fixed-variant": "#005321",
+              "inverse-primary": "#4ae176",
+              "error": "#ba1a1a",
+              "surface-container-high": "#e2e7ff",
+              "on-primary-fixed": "#002109",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#f2f3ff",
+              "surface-container-highest": "#dae2fd",
+              "inverse-surface": "#283044",
+              "inverse-on-surface": "#eef0ff",
+              "primary-container": "#22c55e",
+              "surface-dim": "#d2d9f4",
+              "outline": "#6d7b6c",
+              "on-secondary-fixed": "#321200",
+              "on-background": "#131b2e",
+              "surface-tint": "#006e2f",
+              "surface-variant": "#dae2fd",
+              "on-secondary-fixed-variant": "#753400",
+              "on-primary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-tertiary": "#ffffff",
+              "background": "#faf8ff",
+              "secondary-fixed": "#ffdbc8",
+              "primary": "#006e2f",
+              "secondary-container": "#fb7800",
+              "on-secondary-container": "#592600",
+              "on-tertiary-fixed": "#002113",
+              "on-tertiary-container": "#004a31",
+              "tertiary-fixed": "#6ffbbe",
+              "on-tertiary-fixed-variant": "#005236",
+              "on-surface": "#131b2e",
+              "error-container": "#ffdad6",
+              "surface-container": "#eaedff"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(19, 27, 46, 0) 0%, rgba(19, 27, 46, 0.8) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md fixed top-0 w-full z-50 shadow-[0_8px_24px_rgba(19,27,46,0.08)] dark:shadow-none">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-100/50 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-green-700">arrow_back</span>
+</button>
+<h1 class="text-xl font-extrabold text-green-800 dark:text-green-300 font-headline tracking-tight">FreshRush</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-100/50 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-green-700">favorite</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-100/50 transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-green-700">share</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-20 pb-24 max-w-7xl mx-auto">
+<!-- Hero & Photo Gallery -->
+<section class="px-4 md:px-6 mb-8">
+<div class="relative h-[400px] w-full rounded-xl overflow-hidden group">
+<img alt="Main Hero" class="w-full h-full object-cover" data-alt="Luxurious modern restaurant interior with warm ambient lighting, velvet seating, and coastal Indian art decor elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApDTuUZ0fqtzHFeZltQDbVGD3DaQbVF_7oYdx-adesd3FHBWFR6fa7z9-xSdErONGkGOSuL3jF8B8xrykYVBTlPY2a-qbsDpzmGdeKqH6G2u5zJRL74y68eUK1avh7vkqzrQypdRDRNg6tNCmUnFJiQ9VZzCkLGwJJDZHawsRzF2xVqDcYus0UpXlryrtxgwpqj-b0zF2DI7vJ-2Fvz-SFu_2pX1MUM2KC6eNmYLELtcxKLG5k31ay07yb_e0rHwrj6bhsWATVt4c"/>
+<div class="absolute inset-0 hero-gradient flex flex-col justify-end p-8">
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-sm font-bold">Premium Dining</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">stars</span> 4.8
+                        </span>
+</div>
+<h2 class="text-4xl md:text-5xl font-extrabold text-white font-headline tracking-tight mb-2">The Spice Gallery</h2>
+<p class="text-white/90 text-lg max-w-2xl">An authentic journey through coastal Indian flavors with a modern twist.</p>
+</div>
+</div>
+<!-- Thumbnail Carousel -->
+<div class="flex gap-4 mt-4 overflow-x-auto no-scrollbar pb-2">
+<div class="flex-shrink-0 w-32 h-32 rounded-lg overflow-hidden ring-2 ring-primary">
+<img alt="Interior" class="w-full h-full object-cover" data-alt="Close up of a vibrant seafood curry with fresh herbs and spices in a traditional copper bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1Lv3Eg-LfoiGupsVQio5n5ChBlsdfRsRXJvhNZfbN3bVgAL4cxK3OsjJGLlFRJBGy9zbEQIOKILtxLYIxnh2R1HDzuE1GEL36FtxS_GyqXW4yzK2o1IHPaC1dijGUsuBUNgWKyhopEm_TJ0JAdnuuxgNm1VDzd26yL4gOIMmHIunYGGAXKJwIk4Y1hZ0qHMrCrUH-mQ6M74IQPaDzsL7R9HhyzMO2BcQKeAk0HaGSn4wCiHnMFxousedrukcqinfiD9g2TQ3sANI"/>
+</div>
+<div class="flex-shrink-0 w-32 h-32 rounded-lg overflow-hidden hover:opacity-90 cursor-pointer">
+<img alt="Dish" class="w-full h-full object-cover" data-alt="Chef plating a gourmet Indian dish with precise decoration and colorful sauces in a professional kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn2qExZ_0BgEHZZstjMQiw1sOpxPgFTNLh2bF8Wpfst3FMuIghDpPz5ysnQlT82Met6n_f2twgeJ-KeAS6PLdlGt53GuAaSHpiSagCiz2GgrhAfFgWR-SYRmd0ltUg3iNH9CBL8b6X5KyPDD0UuqLpA5DGFADUZyG12LuNXymAIKlpJHwTyTiJUpwXESY-IHHVgOwKJ8quM09XgqoUmT_2vKUV-nQSgNq4rAMUgr353q4BAV6LiAXLEQaTWtLc6f16aCVEav_iyQQ"/>
+</div>
+<div class="flex-shrink-0 w-32 h-32 rounded-lg overflow-hidden hover:opacity-90 cursor-pointer">
+<img alt="Ambience" class="w-full h-full object-cover" data-alt="A beautifully set dinner table with elegant glassware and warm candlelight in a modern restaurant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA99M1RgQGFf4Zyyd9iax9dbfyg_uOm-bitzxyMU_4i0FgdmjDKtv8Jqae5G2oXm5Erf2hi6UayaPwid5V5PsCPjFZpCfVdQaST7ujKaKff8zSniBqFIZqxGvF-xvjotI_FZ-u39kbaxoGC1uY2yJfdfcNiI0_4Q96yPBHdjySWrolTmTcAOhow-rr1etUAaeApsNF2ftaGdny62d3AWWMPVukJBXpmyj6DXQViqa08JyGGRPWsKVlZ2g0CQ6p9zwPpzTFhhrvgLhc"/>
+</div>
+<div class="flex-shrink-0 w-32 h-32 rounded-lg overflow-hidden hover:opacity-90 cursor-pointer">
+<img alt="Details" class="w-full h-full object-cover" data-alt="Handcrafted Indian spice platter showcasing turmeric, cardamom, and saffron in small ceramic bowls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPuulCw3OS7K6uAtc-1FzNYxULvrCtTgJl9s4MqSJKt0BnQalNqU8uR_Eag8RelQWYXbBkCZgogQR_9jVxHfM6PUVpfyYbtoSNT4hYmZasjBNqrNAPwwZWcPWJt4xsADRly-czNN8pHcYKIx0Zleivu1X9dDd9zAWK7xchmZQ-KW8-GVQ5R0rR-9dQQM-D27m2182AB3iKLmitoF4q_x6oTwoOvJr5boGQ3vj_3WbjjMlTJZhnB6qcjkxBMtTWtR1ont4apIsE4EQ"/>
+</div>
+<div class="flex-shrink-0 w-32 h-32 rounded-lg overflow-hidden hover:opacity-90 cursor-pointer relative">
+<img alt="Exterior" class="w-full h-full object-cover" data-alt="The elegant storefront of The Spice Gallery restaurant with sophisticated signage and large glass windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF2ITFH2QBHLGdDIgTY94l1VHaZI75C-d7dBPv2cw2w_GJLD5UwzvyMbLT1bjuLJ_aixbaW6O2tam_aFLMlaX6_1B4KOaarPIDIUV_xdRMlUqe3QuXOCe1Vnln1axBK4KHocuECsnNSIPaj6-XI749w1_YqI06s6EuvWpGYEQgHpjUJIBfZiBGmVl-sowR5uYLGkdKW2V5zfNdvNmyzP7s7pTRP_UfmPSNVp82zClElip4PKftF7Bni1iOoSDbTCxb3DOmMNJaVRM"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center text-white font-bold">+12</div>
+</div>
+</div>
+</section>
+<!-- Bento Layout: Info, Booking & Contact -->
+<section class="px-4 md:px-6 grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
+<!-- Restaurant Info Column -->
+<div class="lg:col-span-2 flex flex-col gap-6">
+<!-- Info Card -->
+<div class="bg-surface-container-lowest p-8 rounded-lg shadow-[0_8px_24px_rgba(19,27,46,0.04)]">
+<div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+<div class="flex items-center gap-6">
+<div class="flex flex-col">
+<span class="text-on-surface-variant text-sm font-medium mb-1">Distance</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="text-xl font-bold">1.5 km</span>
+</div>
+</div>
+<div class="w-px h-10 bg-outline-variant/20"></div>
+<div class="flex flex-col">
+<span class="text-on-surface-variant text-sm font-medium mb-1">Delivery</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">delivery_dining</span>
+<span class="text-xl font-bold">25-35 min</span>
+</div>
+</div>
+<div class="w-px h-10 bg-outline-variant/20"></div>
+<div class="flex flex-col">
+<span class="text-on-surface-variant text-sm font-medium mb-1">Pricing</span>
+<div class="flex items-center gap-2">
+<span class="text-xl font-bold text-primary">$$$</span>
+<span class="text-on-surface-variant text-sm font-medium">Moderate</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 bg-surface-container-low rounded-full text-on-surface-variant text-sm font-medium">Coastal Indian</span>
+<span class="px-4 py-2 bg-surface-container-low rounded-full text-on-surface-variant text-sm font-medium">Modern Twist</span>
+<span class="px-4 py-2 bg-surface-container-low rounded-full text-on-surface-variant text-sm font-medium">Seafood Specialist</span>
+<span class="px-4 py-2 bg-surface-container-low rounded-full text-on-surface-variant text-sm font-medium">Vegan Options</span>
+</div>
+</div>
+<!-- Menu Tabs & List -->
+<div class="mt-4">
+<div class="flex gap-4 overflow-x-auto no-scrollbar mb-8">
+<button class="flex-shrink-0 px-8 py-3 bg-primary text-white rounded-full font-bold shadow-lg shadow-primary/20">Starters</button>
+<button class="flex-shrink-0 px-8 py-3 bg-surface-container-high text-on-surface-variant rounded-full font-medium hover:bg-surface-container-highest transition-colors">Main Course</button>
+<button class="flex-shrink-0 px-8 py-3 bg-surface-container-high text-on-surface-variant rounded-full font-medium hover:bg-surface-container-highest transition-colors">Drinks</button>
+<button class="flex-shrink-0 px-8 py-3 bg-surface-container-high text-on-surface-variant rounded-full font-medium hover:bg-surface-container-highest transition-colors">Desserts</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest rounded-lg p-4 flex gap-4 items-center shadow-[0_8px_24px_rgba(19,27,46,0.04)] hover:shadow-md transition-all group">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Dish 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Golden fried vegetable pakoras served with fresh mint chutney on a rustic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKN8kz-XqkZtu41gp2J3VEmSVh90ujdnJIQVGecuCr1AbxAEKoOnZLurzt8o50idtvdjz-rHXZqquCoiUvu2KgtVDZzxrzpvHB8d-MENN5h6frRFR4A_8RTVtTLsuwvcMjnVuXUhnjA50IjEbQ02Fl2L8QZcYzXCVpqcKpMAaw7UAkMnFeYatCo2oWPO273bH4rCq9MrLAD1LBruafLWbpWI5dIZltrEfJK_HEmrtDtw22jlGCq7SsXk4XYdyCFA-jCYCdUZ4nX4s"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline font-bold text-lg mb-1">Truffle Naan Bites</h3>
+<p class="text-on-surface-variant text-sm line-clamp-2 mb-2">Mini sourdough naan, truffle butter, sea salt.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold">$14.50</span>
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-primary-container text-on-primary-container hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest rounded-lg p-4 flex gap-4 items-center shadow-[0_8px_24px_rgba(19,27,46,0.04)] hover:shadow-md transition-all group">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Dish 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Traditional Indian butter chicken in a rich tomato-based gravy with a swirl of cream" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk1N-iwl7notPOb6tFhqZjTWaX3PlnOwg75QE4cscZxTwSAPJydm_wINYSxShbP5dWM4Ols0AEAyhALiA9z9P0nI8eaWJay0G1G8RuUq0dPF_7GbF_wvmebPqTnAggi_GKD3dh4BYhm5nxXguzyIpLYvZjwLxBAAy41akGW9xInycZwjzd5wUxmhMYquITNQwmrWxWeFcaz4mXpcT2yppy03QTCHRrr8-sjbyGx3HRNa9GyosG0XiLf53HZjG-Me1G8lNprIHmxQg"/>
+</div>
+<div class="flex-grow">
+<h3 class="font-headline font-bold text-lg mb-1">Gunpowder Prawns</h3>
+<p class="text-on-surface-variant text-sm line-clamp-2 mb-2">Seared jumbo prawns, roasted lentil spice rub.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold">$18.90</span>
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-primary-container text-on-primary-container hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Side Sidebar: Booking & Contact -->
+<div class="flex flex-col gap-6">
+<!-- Reserve a Table Card -->
+<div class="bg-primary p-8 rounded-lg text-white shadow-xl shadow-primary/10 relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="font-headline text-2xl font-bold mb-6">Reserve a Table</h3>
+<div class="space-y-4">
+<div>
+<label class="text-xs font-bold uppercase tracking-wider text-white/70 block mb-2">When</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="bg-white/20 hover:bg-white/30 rounded-lg py-2 text-sm font-bold border border-white/20 transition-colors">Today</button>
+<button class="bg-white rounded-lg py-2 text-sm font-bold text-primary border border-white transition-colors">Tomorrow</button>
+<button class="bg-white/20 hover:bg-white/30 rounded-lg py-2 text-sm font-bold border border-white/20 transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+</button>
+</div>
+</div>
+<div>
+<label class="text-xs font-bold uppercase tracking-wider text-white/70 block mb-2">Party Size</label>
+<div class="flex justify-between items-center bg-white/10 rounded-lg p-1 border border-white/10">
+<button class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-white/10"><span class="material-symbols-outlined">remove</span></button>
+<span class="text-xl font-bold">4 People</span>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white text-primary"><span class="material-symbols-outlined">add</span></button>
+</div>
+</div>
+<button class="w-full bg-secondary-container text-white py-4 rounded-lg font-bold text-lg shadow-lg shadow-black/10 hover:translate-y-[-2px] transition-transform active:scale-95">
+                                Book Now
+                            </button>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -right-12 -bottom-12 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl"></div>
+</div>
+<!-- Contact & Map Card -->
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_8px_24px_rgba(19,27,46,0.04)]">
+<div class="h-48 w-full bg-slate-200 relative group">
+<img alt="Map Preview" class="w-full h-full object-cover" data-alt="Stylized minimalist map showing the restaurant location in a trendy urban neighborhood with green park areas nearby" data-location="Goa, India" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB2vehbYRlXqEzQQUth9AZr34hRpqakWd7HxHv_1PdIdGhQrXGoR2yAaaqmLiMBegMsJosBbqPhlXP1i6WOVg2hkVIvqsZ1yBoTSqIlm_JwfLlDoVkvHGm6q0SOBNPVINVjQwnrfZUIxotBvlvSJZ2UKRVqSSJyMdUL8dtjHsLxwUikATTaonkj4G2KOPZ63CUbrShj-J2jHLRzGvjUiOFxX6ZDo960t39crEfiObsmoHh31gauKnFf2EqxCQ38tEpsVxRgPXVGaw"/>
+<div class="absolute inset-0 bg-primary/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer">
+<span class="bg-white text-primary px-4 py-2 rounded-full font-bold shadow-lg">View Larger Map</span>
+</div>
+</div>
+<div class="p-6">
+<h4 class="font-headline font-bold text-lg mb-2">Location &amp; Contact</h4>
+<p class="text-on-surface-variant text-sm mb-6 flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">location_on</span>
+                            42 Art District, Coastal Road, Sector 5
+                        </p>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-lg border border-outline-variant/30 text-on-surface font-bold hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[20px]">call</span>
+                                Call
+                            </button>
+<button class="flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-surface-container-low text-primary font-bold hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">directions</span>
+                                Directions
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-6 bg-white dark:bg-slate-950 shadow-[0_-8px_24px_rgba(19,27,46,0.08)] rounded-t-[32px]">
+<button class="flex flex-col items-center justify-center bg-green-500 dark:bg-green-600 text-white rounded-full px-5 py-2 active:scale-90 transition-transform duration-150">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-['Be_Vietnam_Pro'] text-[12px] font-medium">Explore</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 active:scale-90 transition-transform duration-150 hover:text-green-600">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-['Be_Vietnam_Pro'] text-[12px] font-medium">Orders</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 active:scale-90 transition-transform duration-150 hover:text-green-600">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="font-['Be_Vietnam_Pro'] text-[12px] font-medium">Cart</span>
+</button>
+<button class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 active:scale-90 transition-transform duration-150 hover:text-green-600">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Be_Vietnam_Pro'] text-[12px] font-medium">Profile</span>
+</button>
+</nav>
+<!-- Desktop Persistent FAB -->
+<div class="hidden md:flex fixed bottom-8 right-8 z-40">
+<button class="bg-primary text-white flex items-center gap-3 px-8 py-4 rounded-full shadow-2xl shadow-primary/30 hover:scale-105 transition-all group">
+<span class="material-symbols-outlined">shopping_basket</span>
+<span class="font-bold text-lg">View Cart (2)</span>
+<span class="w-px h-6 bg-white/20"></span>
+<span class="font-bold text-lg">$33.40</span>
+</button>
+</div>
+</body></html>

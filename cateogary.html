@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary": "#ffffff",
+              "on-tertiary-container": "#004a31",
+              "on-error": "#ffffff",
+              "surface-bright": "#faf8ff",
+              "secondary-fixed-dim": "#ffb68b",
+              "primary-fixed": "#6bff8f",
+              "on-secondary-fixed-variant": "#753400",
+              "secondary-fixed": "#ffdbc8",
+              "surface-variant": "#dae2fd",
+              "on-tertiary-fixed": "#002113",
+              "tertiary-fixed-dim": "#4edea3",
+              "surface-dim": "#d2d9f4",
+              "on-primary-fixed": "#002109",
+              "surface-container-lowest": "#ffffff",
+              "on-primary": "#ffffff",
+              "inverse-surface": "#283044",
+              "surface-container-highest": "#dae2fd",
+              "surface-container": "#eaedff",
+              "surface-container-high": "#e2e7ff",
+              "inverse-on-surface": "#eef0ff",
+              "outline-variant": "#bccbb9",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#28c38a",
+              "on-surface": "#131b2e",
+              "secondary-container": "#fb7800",
+              "secondary": "#994700",
+              "outline": "#6d7b6c",
+              "surface-tint": "#006e2f",
+              "error": "#ba1a1a",
+              "primary-container": "#22c55e",
+              "on-secondary": "#ffffff",
+              "tertiary": "#006c49",
+              "on-surface-variant": "#3d4a3d",
+              "tertiary-fixed": "#6ffbbe",
+              "on-background": "#131b2e",
+              "primary-fixed-dim": "#4ae176",
+              "on-primary-fixed-variant": "#005321",
+              "surface-container-low": "#f2f3ff",
+              "primary": "#006e2f",
+              "on-secondary-container": "#592600",
+              "inverse-primary": "#4ae176",
+              "on-primary-container": "#004b1e",
+              "on-tertiary-fixed-variant": "#005236",
+              "on-error-container": "#93000a",
+              "background": "#faf8ff",
+              "surface": "#faf8ff",
+              "on-secondary-fixed": "#321200"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md shadow-[0_24px_24px_rgba(19,27,46,0.08)]">
+<div class="flex items-center justify-between px-6 h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="p-2 -ml-2 hover:bg-green-50 rounded-full transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-green-700">arrow_back</span>
+</button>
+<h1 class="text-2xl font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-green-700">All Categories</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 hover:bg-green-50 rounded-full transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-green-700">search</span>
+</button>
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden border-2 border-primary-container/20">
+<img alt="User profile avatar" class="w-full h-full object-cover" data-alt="portrait of a professional young man with a friendly smile, clean studio lighting, soft blurred background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjbwu-0oc9Zv_2EDrlOSvokySH9XIAMfjtAoKxsYtwYsnzXcLM9WE7kqUoGOyuJDlKq3eSXM_xiPJ3EQEet__A4o0LcrvqaUKi6wLZ6LmG6ma9xfiEMQfN-A8oynBhIdd9ZouFkKNjbV85sDEuIaPAkMwLYnjt7BiWsmahH4z-_FMLsjIiH8mpgg5wTo-YA2Ay41cK8rVsE14IpFpvAeUWkicFx5LXKyK9g3mVwj_VNiMO25E6ru5Ug837PBrFkZ4BHZzj6-M37Gc"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Hero Section / Context -->
+<div class="mb-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-white text-[12px] font-bold tracking-wider uppercase mb-4">Express Delivery</span>
+<h2 class="font-headline font-extrabold text-4xl lg:text-5xl text-on-surface leading-tight tracking-tight max-w-2xl mb-4">
+                What are you <span class="text-primary italic">craving</span> today?
+            </h2>
+<p class="text-on-surface-variant text-lg max-w-xl">Explore our curated selections of local favorites and daily essentials delivered to your doorstep.</p>
+</div>
+<!-- Bento Grid Categories -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<!-- ACTIVE: Restaurants -->
+<div class="group relative overflow-hidden bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-[0_24px_48px_rgba(0,110,47,0.12)] transition-all duration-300 col-span-2 aspect-[2/1] md:aspect-auto md:h-64">
+<img alt="Restaurants" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="gourmet plated pasta dish with fresh basil and parmesan, warm atmospheric restaurant lighting, artistic composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC43BLXpfk_6g-0AtkpnH5um_Yj8bmtu0LSkt4m-WtPkiwbqtrtk98iCWQ8HzQMw3y2Sh5Zs5LTOMz1tduwFeGYu6b4R3_F4Ezawa6u1Dk3lLd5vM_fwoA6uZ6tj-umquNiDQu1_kHz5loqv8VTl63peKhVSuFxUXDanesV2QwTkRuPDwotidogCKRle_zk5A4_85wC0-cJpHTQeyrKQ7YNVmky9Gc-crwWTKnRV5NC8840GFDfuEsZqO-ULmlFdLvVSJ4CMelGVtQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/20 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="flex items-center gap-2 mb-2">
+<span class="px-2 py-0.5 bg-primary-container text-on-primary-container rounded-full text-[10px] font-bold uppercase tracking-widest">Active</span>
+</div>
+<h3 class="text-white font-headline font-bold text-2xl tracking-tight">Restaurants</h3>
+<p class="text-white/80 text-sm mt-1">Local &amp; international cuisines</p>
+</div>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- ACTIVE: Street Food -->
+<div class="group relative overflow-hidden bg-surface-container-lowest rounded-lg shadow-sm hover:shadow-[0_24px_48px_rgba(0,110,47,0.12)] transition-all duration-300 aspect-square">
+<img alt="Street Food" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="colorful variety of street tacos on a wooden board with lime wedges and salsas, vibrant natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2qmoqsVx4FX5JUSfYa6jeSRgg-flsVEbk810hym4oKKE41F_IkAyNT5hUwvaItAbQLshFGSKYth33luM9NUpglcfREvrbLY65iEUVazISzHfgchiOA7l1KzHEfKHMn_Ty7IQSledrfqygR7OMqBaURa7KNNnBF9Edfyb0Vyb8i3IYyrFM7imhKXQ2CtVp0RC98puwgUUopTayXJiJRG1Kt1loEujJCF4hyBxk_Aa6Gi8R2-0-zYCI4MGnyYn6GbqKWqFDjllAgmQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-5 left-5">
+<h3 class="text-white font-headline font-bold text-xl tracking-tight">Street Food</h3>
+</div>
+</div>
+<!-- LOCKED: Grocery -->
+<div class="relative overflow-hidden bg-surface-container-low rounded-lg transition-all duration-300 grayscale opacity-70 border border-outline-variant/20 aspect-square">
+<img alt="Grocery" class="absolute inset-0 w-full h-full object-cover" data-alt="fresh vibrant vegetables and fruits neatly arranged in a wooden market crate, soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIYsDSczeZiseeJ2gNs_dWEl9vjhwiHCTCPTsNWdU-xrJeiqD5ip60PCm0Zw2JrVREO9q9i9jIHHcVv2Etsw49kvrZ1-Ej5_VPAw9ORhiD1KI-Y1Tt8SQ_JkfcrmbYDGM0vrE7XqsxKyQJY6gAabMQjvpzrrl6d6vgMgO3wowUgMy9in8fnK6Nryvy1faLnP6D599semIS__gLWnwlHRCTu3qSflyE2axYmi5Zp3FmE2sECaf0FvCVWAfE2AkbjuiC3bNyg3_xL84"/>
+<div class="absolute inset-0 bg-on-surface/40 flex flex-col items-center justify-center p-4 text-center">
+<span class="material-symbols-outlined text-white text-3xl mb-2">lock</span>
+<span class="bg-surface/20 backdrop-blur-md text-white px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">Coming Soon</span>
+</div>
+<div class="absolute bottom-5 left-5">
+<h3 class="text-white font-headline font-bold text-xl tracking-tight">Grocery</h3>
+</div>
+</div>
+<!-- LOCKED: Pharmacy -->
+<div class="relative overflow-hidden bg-surface-container-low rounded-lg grayscale opacity-70 border border-outline-variant/20 aspect-square">
+<img alt="Pharmacy" class="absolute inset-0 w-full h-full object-cover" data-alt="organized medicine boxes and clinical glass bottles on a clean white pharmacy shelf, bright sterile lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKN0g5ryTaKt8AiKqWlOpscEGxGg8px-Wle8jDn6miJBxbdIuPYDp9c05849fKrt5dtfr_AfgpYivfGZknyHN76PbsdZKUstlH7j9Jdlsqzw2JJ2YmczEFsfbnQv7I-wqD8TJVly-hOONcgXOVGwQSnvNmoqI8HEzOpbsBRrMILOEC35iT-65-yEZ0w3RHtl0MtK6K8j1WT9626r-60DOQaeBqBl2pWxDrxtv8a7Xc6IyzbJCDUVO7wotwUuMLR1kyudyAutJL7dA"/>
+<div class="absolute inset-0 bg-on-surface/40 flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl mb-2">lock</span>
+</div>
+<div class="absolute bottom-5 left-5">
+<h3 class="text-white font-headline font-bold text-xl tracking-tight">Pharmacy</h3>
+</div>
+</div>
+<!-- LOCKED: Meat & Fish (Tall) -->
+<div class="relative overflow-hidden bg-surface-container-low rounded-lg grayscale opacity-70 border border-outline-variant/20 row-span-2 aspect-[1/2] md:aspect-auto">
+<img alt="Meat &amp; Fish" class="absolute inset-0 w-full h-full object-cover" data-alt="fresh raw salmon steaks and cuts of prime rib-eye beef on dark stone surface with sea salt and rosemary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9INrA011KRj_0ztndzRHtbUJh1wGXrMfWcIAUHJoat36GlR8D3W09Hy3vCLry-f3VUXqBVWuAjpq07CoYT1tY0_T5UNyZogfcQkX2IGLfPYWcTYlDk0OEYUbtZoPEufdKVNG9ZfSN3FdmniTuMo5KOwDysXk-PBO_TiT6Yo_PhhuXRWWHgFcvA8Tq8Mm7YrTRveXLpcR0CPPXzx9XpP7ZS7tDQsD5RDvjyAeq90O1hwLvtlx6lcwifmZKj3bguFJv1_rN2kTzBBc"/>
+<div class="absolute inset-0 bg-on-surface/40 flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl mb-2">lock</span>
+<span class="bg-surface/20 backdrop-blur-md text-white px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">Coming Soon</span>
+</div>
+<div class="absolute bottom-5 left-5">
+<h3 class="text-white font-headline font-bold text-xl tracking-tight">Meat &amp; Fish</h3>
+</div>
+</div>
+<!-- LOCKED: Bakery -->
+<div class="relative overflow-hidden bg-surface-container-low rounded-lg grayscale opacity-70 border border-outline-variant/20 aspect-square">
+<img alt="Bakery" class="absolute inset-0 w-full h-full object-cover" data-alt="freshly baked artisanal sourdough bread loaves on a rustic cooling rack with dusting of flour" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2VN-JgyVqZhZ0ooTDrgmPO0loyA1Owh2c1d8mzydkqumJJdJV1EIQEm5btMglVwImluTzVONdKkFaexyoyIFd99ulq3JO8YWFxDcPAXFwxQc8affeQRiT_MK5aKcp6TkI1eLPPc2fx6qrk1cYpWvPj2kxq88sY7nKE3Ot6G1rrziy9SxJ9FtL-jyfSmkiWsMCYa6IFuN-rRF-RnFCE6kAcDjwCnUzwZ9IYnYBZ8WQJQ8x3kTpvfvI5b2JGFVjP0Dzbl0a1MNimjg"/>
+<div class="absolute inset-0 bg-on-surface/40 flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl mb-2">lock</span>
+</div>
+<div class="absolute bottom-5 left-5">
+<h3 class="text-white font-headline font-bold text-xl tracking-tight">Bakery</h3>
+</div>
+</div>
+<!-- LOCKED: Pet Supplies -->
+<div class="relative overflow-hidden bg-surface-container-low rounded-lg grayscale opacity-70 border border-outline-variant/20 aspect-square">
+<img alt="Pet Supplies" class="absolute inset-0 w-full h-full object-cover" data-alt="cute golden retriever dog looking up at high-quality pet food and chew toys, soft home lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhTk5oEVmpzIR8OrdcKO0iYxTVveX1bzywaHq09bmpUBm91kG_0s1Kk3546J2OfRhE-__cqG46e07D91tnm37gA9kDFicbD0cfduMdS3GpZxllQsLBXtlh3KLwuD3_GSgzSC0MdyKfaZ2qnKd_6oWlxKiGiVmoRpobVgNnqfyj38BWIpjiZCqUdBhJWEqgTDWNxHu07W56ZuCbDaka7LYKf86sqUv_SRz5nhVhUYtrdlcpVk1PyMu9l78gAgQH-zOwNTeNXffG2YM"/>
+<div class="absolute inset-0 bg-on-surface/40 flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl mb-2">lock</span>
+</div>
+<div class="absolute bottom-5 left-5">
+<h3 class="text-white font-headline font-bold text-xl tracking-tight">Pet Supplies</h3>
+</div>
+</div>
+<!-- LOCKED: Gifts -->
+<div class="relative overflow-hidden bg-surface-container-low rounded-lg grayscale opacity-70 border border-outline-variant/20 aspect-square">
+<img alt="Gifts" class="absolute inset-0 w-full h-full object-cover" data-alt="elegantly wrapped gift box with a silk ribbon on a soft pastel background with scattered confetti" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZUx-Tk4CJDqessS7_lYHz9gBpG5apSt7RM4hNCgQv8KMX3NmrzWUdH702OqDo6NtIjh_SV8MEz6zbTjRLUmLaTUOObdbWSqgeK3O3a-TrNmiFKVALNw4ygx9dJE622dyUgPdRDrddCKjTO9Y2tlejqM0j0YZbRM3l9K2grc2l2VDrW8NSKKmk00OewNQ5HODjDqrgEWbZ2H7EGDGfxays_2AoL7CEWnn9bZZhbQ0HqWpzx65qjnshyYAKeSA0f4GExHNfkVtrILk"/>
+<div class="absolute inset-0 bg-on-surface/40 flex flex-col items-center justify-center">
+<span class="material-symbols-outlined text-white text-3xl mb-2">lock</span>
+</div>
+<div class="absolute bottom-5 left-5">
+<h3 class="text-white font-headline font-bold text-xl tracking-tight">Gifts</h3>
+</div>
+</div>
+</div>
+<!-- Featured Banner -->
+<div class="mt-16 bg-primary rounded-xl overflow-hidden relative min-h-[200px] flex items-center">
+<div class="absolute inset-0 bg-gradient-to-r from-primary to-primary-container opacity-90"></div>
+<img alt="FreshRush Delivery" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay" data-alt="close-up of a high-tech delivery tracking screen on a smartphone held by a driver with cityscape background at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4qttJ6Lo2NfBPYvSxtfUIv4wudfuTnnDZ1vBQqt4em77OqAkz9tDBYDEE8BCH0EDYxjBdV-vV8IPv6aV6IBV1IrCh1PN4kbNV_zWga5ssJtRyMZNAkIOceBXN0rZq_xDolwPaVoKa3cpmg8IHakHvIN1z9w3fFUqfbpA3vL-w1hZsZuUBKps3fr1l44g46h75k9y793MI2beD9wII9dEdefPwxrkhAOAZuLyDSchdA9h3r0HjXOsrwrJR8LiEwRYP1_RYJktTGcI"/>
+<div class="relative z-10 p-10 text-white max-w-lg">
+<h4 class="font-headline font-extrabold text-3xl mb-2">Join the Rush</h4>
+<p class="text-white/80 mb-6">Earn points on every category and unlock exclusive discounts across our partner stores.</p>
+<button class="px-8 py-3 bg-white text-primary font-bold rounded-full transition-all active:scale-95 duration-200 shadow-xl">Learn More</button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 w-full rounded-t-[32px] z-50 bg-white/90 backdrop-blur-lg shadow-[0_-8px_24px_rgba(19,27,46,0.05)] md:hidden">
+<div class="flex justify-around items-center h-20 px-4 pb-safe">
+<!-- Home -->
+<div class="flex flex-col items-center justify-center text-slate-500 hover:text-green-600 transition-transform active:scale-90 duration-150 px-5 py-1.5">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium mt-1">Home</span>
+</div>
+<!-- Categories (Active) -->
+<div class="flex flex-col items-center justify-center bg-green-100 text-green-800 rounded-full px-5 py-1.5 transition-transform active:scale-90 duration-150">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">grid_view</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium mt-1">Categories</span>
+</div>
+<!-- Orders -->
+<div class="flex flex-col items-center justify-center text-slate-500 hover:text-green-600 transition-transform active:scale-90 duration-150 px-5 py-1.5">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium mt-1">Orders</span>
+</div>
+<!-- Profile -->
+<div class="flex flex-col items-center justify-center text-slate-500 hover:text-green-600 transition-transform active:scale-90 duration-150 px-5 py-1.5">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium mt-1">Profile</span>
+</div>
+</div>
+</nav>
+</body></html>
