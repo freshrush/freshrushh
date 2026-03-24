@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FreshRush - Search</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#dae2fd",
+              "on-tertiary-fixed": "#002113",
+              "on-error": "#ffffff",
+              "secondary-fixed": "#ffdbc8",
+              "on-secondary": "#ffffff",
+              "on-tertiary-fixed-variant": "#005236",
+              "surface-tint": "#006e2f",
+              "inverse-primary": "#4ae176",
+              "tertiary": "#006c49",
+              "outline-variant": "#bccbb9",
+              "on-primary-fixed-variant": "#005321",
+              "surface-container": "#eaedff",
+              "primary-container": "#22c55e",
+              "outline": "#6d7b6c",
+              "primary-fixed-dim": "#4ae176",
+              "tertiary-fixed-dim": "#4edea3",
+              "secondary-fixed-dim": "#ffb68b",
+              "on-error-container": "#93000a",
+              "primary": "#006e2f",
+              "primary-fixed": "#6bff8f",
+              "tertiary-fixed": "#6ffbbe",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#3d4a3d",
+              "surface": "#faf8ff",
+              "on-secondary-container": "#592600",
+              "error": "#ba1a1a",
+              "surface-dim": "#d2d9f4",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "tertiary-container": "#28c38a",
+              "on-secondary-fixed": "#321200",
+              "surface-container-highest": "#dae2fd",
+              "on-primary-container": "#004b1e",
+              "inverse-on-surface": "#eef0ff",
+              "error-container": "#ffdad6",
+              "surface-container-high": "#e2e7ff",
+              "background": "#faf8ff",
+              "surface-bright": "#faf8ff",
+              "secondary-container": "#fb7800",
+              "surface-container-low": "#f2f3ff",
+              "on-surface": "#131b2e",
+              "on-primary-fixed": "#002109",
+              "secondary": "#994700",
+              "inverse-surface": "#283044",
+              "on-secondary-fixed-variant": "#753400",
+              "on-background": "#131b2e",
+              "on-tertiary-container": "#004a31"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body min-h-screen pb-24">
+<!-- TopAppBar Execution -->
+<nav class="bg-slate-50/80 backdrop-blur-md fixed top-0 w-full z-50 shadow-xl shadow-slate-900/5">
+<div class="flex items-center justify-between px-6 h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-green-700 hover:bg-green-50 transition-colors p-2 rounded-full active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline font-bold tracking-tight text-2xl text-green-700">FreshRush</h1>
+</div>
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary-container">
+<img alt="User Profile" data-alt="professional headshot of a smiling young man with neat hair and a clean background for user profile avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrgfBbOoz_yi71HVzKD4n0-K9S7XPZfxBt90u2usOSShcBFCaULavTnvqzL-03XreUVI0LQWd8nxCNBUuu-1DP_8IygaiFyc3NAmXFLT8uyTYvRgnF0VIB6gNitFS5chV68spdHuRCl66j1rUhVXRZ8DWVzifv_V7DyKf92pCpGE0aZ0pZWiuOtIs_Lm8qaVD-ovgmN237QjAjCG4HFYzMJo9OUerDVKQEkIUbOuNQlk5fLNuWedYFEFTrXWcSHs3-fds43MrRvKo"/>
+</div>
+</div>
+</nav>
+<!-- Main Canvas -->
+<main class="pt-20 px-6 max-w-7xl mx-auto space-y-8">
+<!-- Search Bar Section -->
+<section class="mt-4">
+<div class="relative group">
+<div class="absolute inset-y-0 left-5 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-primary group-focus-within:text-primary-container transition-colors" data-icon="search">search</span>
+</div>
+<input class="w-full bg-surface-container-low border-none rounded-full py-5 pl-14 pr-6 text-lg font-medium placeholder:text-slate-400 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all shadow-sm" placeholder="Cravings? Search restaurants or dishes" type="text"/>
+</div>
+</section>
+<!-- Recent Searches (Horizontal Scroll) -->
+<section>
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-headline font-bold text-xl tracking-tight">Recent Searches</h3>
+<button class="text-primary font-semibold text-sm">Clear All</button>
+</div>
+<div class="flex gap-3 overflow-x-auto no-scrollbar pb-2">
+<div class="flex-shrink-0 bg-surface-container-high px-6 py-2.5 rounded-full text-on-surface-variant font-medium flex items-center gap-2 hover:bg-primary-container hover:text-white transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="history">history</span> Pizza
+                </div>
+<div class="flex-shrink-0 bg-surface-container-high px-6 py-2.5 rounded-full text-on-surface-variant font-medium flex items-center gap-2 hover:bg-primary-container hover:text-white transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="history">history</span> Burger
+                </div>
+<div class="flex-shrink-0 bg-surface-container-high px-6 py-2.5 rounded-full text-on-surface-variant font-medium flex items-center gap-2 hover:bg-primary-container hover:text-white transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="history">history</span> Healthy
+                </div>
+<div class="flex-shrink-0 bg-surface-container-high px-6 py-2.5 rounded-full text-on-surface-variant font-medium flex items-center gap-2 hover:bg-primary-container hover:text-white transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="history">history</span> Sushi
+                </div>
+<div class="flex-shrink-0 bg-surface-container-high px-6 py-2.5 rounded-full text-on-surface-variant font-medium flex items-center gap-2 hover:bg-primary-container hover:text-white transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="history">history</span> Tacos
+                </div>
+</div>
+</section>
+<!-- Trending Now (Bento Style Grid) -->
+<section>
+<h3 class="font-headline font-bold text-2xl tracking-tight mb-6">Trending Now</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<!-- Trend 1 -->
+<div class="group relative overflow-hidden rounded-xl h-48 bg-surface-container-highest cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90" data-alt="Close-up of a delicious pizza with melting cheese and fresh basil leaves on a rustic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYDRUdpAOi4lJ5MGQ9CDCqxrF9OaJsaBkbwhx0dI_X19bBjw_j0Zs9G1nQSleU6IqIoqwCyORy8SW6L0bzrpb9X25SMyFJAGSdAo-ED3coMw3h9N6BgQ64RW9BSNSi_l-GnNq-E1cz_EVRnxYiBNrlYfm30RNOy3G92MbFyWbk2VXVR4EmzchwwHpo0zETbRtR7vqNr7uBJjZRtM0Z0ouu0FXc0PvbyxcJJMWbGWdOgTqYIa1q-5Yb9RnB5ysjmygnpD2GbZAOoEY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-white">
+<p class="font-headline font-extrabold text-xl">Pizza</p>
+<span class="text-xs opacity-80">200+ varieties</span>
+</div>
+</div>
+<!-- Trend 2 -->
+<a href="single_product.html" class="group relative overflow-hidden rounded-xl h-48 bg-surface-container-highest block cursor-pointer">
+
+  <img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90"
+       src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC6T8by_s5FoT60gXfkz_6AmaiFN1ESph6AY78B_gYeRJwdLay3ISTlNBCMEVja0xIkKrEDzwMW8MvErxO2woI9Uq7qqn5az-uLy2AUZXV471-PNNwd1KhcdQpqWI8Z-LSxnqlDjy57GaVgk4kNYWXvB780SrDC3P-n_i81bfiR3g2AMUL7GmwAQPyHCKDZEaUyPTHu9wU5YhJaNyfk_OnXk2hfsWiyKi4W5XjEYiCpKyuMntKgIa0O6Ook_EBCagsAVP14h03v7Q"
+       alt="Biryani"/>
+
+  <div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent"></div>
+
+  <div class="absolute bottom-4 left-4 text-white">
+    <p class="font-headline font-extrabold text-xl">Biryani</p>
+    <span class="text-xs opacity-80">Local favorites</span>
+  </div>
+
+</a>
+<!-- Trend 3 -->
+<div class="group relative overflow-hidden rounded-xl h-48 bg-surface-container-highest cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90" data-alt="Delicious stack of glazed donuts with colorful sprinkles in a bright studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8WCggMpns16MC6FPxfiAmj9yrcndOI3f5-JkkSYOg7RUGt19Z9Qsr-Wd6kj4y8-QUdXzCdBSVx6o2ZVBTPaMCkVhd4SGEqdsNVW08SGm7t8YeNQFfnH2YSUqK4xrah5lUpbGrqGilSU8SE_ghfM0PRQDtJzQPAJn_rSQsuCCfX8X5V1HZWa6FhCMdkIVTaKG3XHTQtSog77kAnZ16kIulk1GGcDr9DdtYeOtW6nRIFRnPWKsB-MILWVuRVu0AXaWQbFwcsvwBwgc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-white">
+<p class="font-headline font-extrabold text-xl">Desserts</p>
+<span class="text-xs opacity-80">Sweet cravings</span>
+</div>
+</div>
+<!-- Trend 4 -->
+<div class="group relative overflow-hidden rounded-xl h-48 bg-surface-container-highest cursor-pointer">
+<img class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-90" data-alt="Crispy golden dosa served with a side of white chutney and spicy sambar on a traditional plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWX7glM0Za0Yb_nO86012iit_rduyjvtugMGsyZo8DwZnnK1HRRitHDR-gLg9a53QvfPCfLY01l241faStYZ0xfpVs9codcZ58VXvAAIzDoBMF6M11DTksmLoDAcmqPjKuogCsX7tA9Fhi-PaZhiGsquNC85tzySZ81BuYnHvhsJzCKVRNmKB3XRf5N_UbSskxiSjE3ScOrLw2HTySS_I2KTPEuHwV79wuNr3JjoGnUhpQRlIFtyPW02qiZTEyNzn8C0TDxvmNZjI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-white">
+<p class="font-headline font-extrabold text-xl">Dosa</p>
+<span class="text-xs opacity-80">South Indian flair</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Popular Restaurants (Search Results Initial State) -->
+<section class="pb-8">
+<h3 class="font-headline font-bold text-2xl tracking-tight mb-6">Popular Restaurants Near You</h3>
+<div class="space-y-8">
+<a href="resturants_detailspage.html" class="group flex flex-col md:flex-row gap-6 items-start bg-surface-container-lowest p-4 rounded-lg hover:shadow-xl transition-all duration-300">
+
+  <div class="w-full md:w-64 h-44 rounded-lg overflow-hidden flex-shrink-0">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+         src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgYqFsEbVbiioMngaFDmiJiJ2JhUWkInE88EzGJBF9NRECWYgzf82w8vwA7NUahVdFQG6OSWDtf1h-UScewssuJBfd0nNpRSwopljasRVH2QWDfzJyVNm8XRpk3IhQ2PSW7ibXiKZobtrB95B1-2szwpeF2oO7XSXV7yDH4Dyfi01z5MfX2GtaceuM7KdBhlOcFStgmHJBQEIPAgtPZ8x0ObyLnldYkwcWXnYYim6al8GNRm3ZV1AJ04m-yajvPe6K6jQlnYFhjoU"
+         alt="Restaurant"/>
+  </div>
+
+  <div class="flex-grow flex flex-col h-full py-2">
+    <div class="flex justify-between items-start mb-2">
+      <h4 class="font-headline font-extrabold text-2xl">The Gourmet Kitchen</h4>
+      <div class="bg-primary text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+        <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span> 4.8
+      </div>
+    </div>
+
+    <p class="text-on-surface-variant font-medium mb-4">Italian • Pasta • Wood-fired Pizzas</p>
+
+    <div class="mt-auto flex gap-4 text-sm font-semibold text-slate-500 italic">
+      <span class="flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm">schedule</span> 20-30 mins
+      </span>
+      <span class="flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm">distance</span> 2.4 km
+      </span>
+    </div>
+  </div>
+
+</a>
+<!-- Restaurant Card 2 -->
+<a href="resturants_detailspage.html" class="group flex flex-col md:flex-row gap-6 items-start bg-surface-container-lowest p-4 rounded-lg hover:shadow-xl transition-all duration-300">
+
+  <div class="w-full md:w-64 h-44 rounded-lg overflow-hidden flex-shrink-0">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+         src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5-7CE9I69Hy0OvnjlgIjgI_BuOLpFUDkBUfnGqy0zfK5LdOz_MAm7xFiRPjbDFhuTRRku_905COT4sbgkHVfrdbU7185Z2VAS6lgKR6R5G9Q5WiYvQ4yt4JkKP0XgjHSWvPBMarpVAaPvu3UeI7VOsvCq1jzzgo40ApMIRCYJDbEYIswPCXcTPRo7rO5guroIBql5nnXHPtoE7ckAoTwFULzP1krzXA0hYSrgdQAtIRAh-Sgoy41PN0RzQe0b524FGJAfq7slIzk"
+         alt="Restaurant"/>
+  </div>
+
+  <div class="flex-grow flex flex-col h-full py-2">
+    <div class="flex justify-between items-start mb-2">
+      <h4 class="font-headline font-extrabold text-2xl">Sakura Zen Sushi</h4>
+      <div class="bg-primary text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1">
+        <span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span> 4.5
+      </div>
+    </div>
+
+    <p class="text-on-surface-variant font-medium mb-4">Japanese • Sushi • Ramen</p>
+
+    <div class="mt-auto flex gap-4 text-sm font-semibold text-slate-500 italic">
+      <span class="flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm">schedule</span> 35-45 mins
+      </span>
+      <span class="flex items-center gap-1">
+        <span class="material-symbols-outlined text-sm">distance</span> 4.1 km
+      </span>
+    </div>
+  </div>
+
+</a>
+</section>
+</main>
+<!-- BottomNavBar Execution -->
+<nav class="fixed bottom-0 left-0 w-full h-20 bg-white/90 backdrop-blur-xl flex justify-around items-center px-4 pb-2 z-50 rounded-t-[32px] shadow-[0_-8px_24px_rgba(19,27,46,0.08)]">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-slate-400 hover:text-green-600 transition-transform duration-200 active:scale-90 px-5 py-2" href="index.html">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label text-[11px] font-medium">Home</span>
+</a>
+<!-- Search (Active) -->
+<a class="flex flex-col items-center justify-center bg-green-500 text-white rounded-2xl px-5 py-2 active:scale-90 transition-transform duration-200" href="">
+<span class="material-symbols-outlined" data-icon="search" style="font-variation-settings: 'FILL' 1;">search</span>
+<span class="font-label text-[11px] font-medium">Search</span>
+</a>
+<!-- Orders -->
+<a class="flex flex-col items-center justify-center text-slate-400 hover:text-green-600 transition-transform duration-200 active:scale-90 px-5 py-2" href="orders.html">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-label text-[11px] font-medium">Orders</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-slate-400 hover:text-green-600 transition-transform duration-200 active:scale-90 px-5 py-2" href="profile.html">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label text-[11px] font-medium">Profile</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#753400",
+              "secondary-fixed-dim": "#ffb68b",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed": "#002113",
+              "on-primary-container": "#004b1e",
+              "on-secondary": "#ffffff",
+              "on-error-container": "#93000a",
+              "surface-dim": "#d2d9f4",
+              "surface-container-highest": "#dae2fd",
+              "primary-fixed-dim": "#4ae176",
+              "surface-container-low": "#f2f3ff",
+              "on-tertiary-container": "#004a31",
+              "error-container": "#ffdad6",
+              "tertiary": "#006c49",
+              "on-tertiary-fixed-variant": "#005236",
+              "on-tertiary": "#ffffff",
+              "background": "#faf8ff",
+              "tertiary-container": "#28c38a",
+              "primary-fixed": "#6bff8f",
+              "inverse-on-surface": "#eef0ff",
+              "tertiary-fixed": "#6ffbbe",
+              "on-surface": "#131b2e",
+              "secondary-fixed": "#ffdbc8",
+              "tertiary-fixed-dim": "#4edea3",
+              "outline-variant": "#bccbb9",
+              "on-primary-fixed-variant": "#005321",
+              "surface-container-high": "#e2e7ff",
+              "primary": "#006e2f",
+              "error": "#ba1a1a",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#3d4a3d",
+              "surface-bright": "#faf8ff",
+              "secondary": "#994700",
+              "on-primary-fixed": "#002109",
+              "on-secondary-container": "#592600",
+              "surface-container": "#eaedff",
+              "primary-container": "#22c55e",
+              "inverse-primary": "#4ae176",
+              "on-error": "#ffffff",
+              "surface": "#faf8ff",
+              "on-secondary-fixed": "#321200",
+              "surface-variant": "#dae2fd",
+              "secondary-container": "#fb7800",
+              "outline": "#6d7b6c",
+              "inverse-surface": "#283044",
+              "surface-tint": "#006e2f",
+              "on-background": "#131b2e"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        background-color: #faf8ff;
+      }
+      h1, h2, h3 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 w-full bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-green-100/20 dark:border-slate-800/20 shadow-[0_24px_24px_rgba(19,27,46,0.08)] flex items-center px-4 h-16 w-full">
+<div class="flex items-center gap-4 w-full">
+<button class="material-symbols-outlined text-green-700 dark:text-green-400 p-2 hover:bg-green-50 dark:hover:bg-slate-900 transition-colors active:scale-95 duration-200 rounded-full" data-icon="arrow_back">arrow_back</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-xl tracking-tight text-on-surface">Flash Deals</h1>
+</div>
+</header>
+<main class="pb-32">
+<!-- Countdown Banner (Bento Style) -->
+<section class="px-4 pt-6 pb-2">
+<div class="bg-gradient-to-br from-primary to-primary-container rounded-xl p-6 text-white overflow-hidden relative">
+<div class="relative z-10">
+<p class="font-label text-sm font-medium opacity-90 mb-1">Hurry up! Ends in</p>
+<div class="flex gap-2 items-center">
+<span class="bg-white/20 backdrop-blur-md rounded-lg px-3 py-2 font-headline font-bold text-2xl">02</span>
+<span class="font-headline font-bold text-2xl">:</span>
+<span class="bg-white/20 backdrop-blur-md rounded-lg px-3 py-2 font-headline font-bold text-2xl">45</span>
+<span class="font-headline font-bold text-2xl">:</span>
+<span class="bg-white/20 backdrop-blur-md rounded-lg px-3 py-2 font-headline font-bold text-2xl">12</span>
+</div>
+</div>
+<!-- Abstract Shape Decoration -->
+<div class="absolute -right-8 -bottom-8 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+<div class="absolute right-4 top-4 opacity-20">
+<span class="material-symbols-outlined text-6xl" data-icon="bolt">bolt</span>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="px-4 py-6">
+<div class="grid grid-cols-2 gap-4">
+<!-- Product Card 1 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_8px_20px_rgba(19,27,46,0.04)] transition-all duration-300">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Pepperoni Pizza" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="overhead shot of a hot pepperoni pizza with melting cheese and fresh basil on a dark rustic wooden background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiL4-ifGN5OfslWnrLTZ-ee7-RIAOt8LxHvjM0vv7TDn-ZRaRlVjio-O0MTvZtrHnJZRhW_KBBxNizBKcDeXTWssYi65ULNerSlTMZPdqir8J5wO-B2dHY8fIFV4n8HmUfu9ssCt-sJp9JqK2N2wv1kQ0EK-hjw38-9cLiDSbBqqdRGQqlGQsj8U7FezEYxOWvbCYbZLSJm_kavbmIYjN1LOcL5ujq4PsTVQ1K6NqDRXMzTsYH4pGh7LQ8zjnwd8e5OZP4KLk17Gs"/>
+<div class="absolute top-3 left-3 bg-secondary-container text-white text-[11px] font-bold px-2 py-1 rounded-full shadow-lg">
+                            50% OFF
+                        </div>
+<button class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-on-surface-variant p-2 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="font-headline font-bold text-on-surface text-base mb-1 line-clamp-1">Pepperoni Pizza</h3>
+<p class="font-label text-xs text-on-surface-variant mb-3">Pizza Hut</p>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-on-surface-variant line-through text-[11px] font-medium leading-tight">$20.00</span>
+<span class="text-primary font-bold text-lg leading-tight">$10.00</span>
+</div>
+<button class="bg-primary-container hover:bg-primary text-white p-2 rounded-lg transition-colors active:scale-90">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_8px_20px_rgba(19,27,46,0.04)] transition-all duration-300">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Classic Burger" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="gourmet double beef burger with melting cheddar cheese, crisp lettuce, and tomato on a toasted brioche bun" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeBgX_VbSIis195ExBsEvbdc3aRMVopkFo45qs6ZYM5nQxuifBdvr6o13F3wi4F2QKlWIhowbckGqnt84U0KCe6Ue-DHR8axhrQ_kGn9Min4JLmEzUkOQnbnkRYBGwD-Pdc1iOYinNw9hOlzd0L92CTTWIX5mKwFF65Emn_NAxeIyLPc0dkaG2Y-4JlLXsOzYyAe2nDRPf1KneRtLMvU54vH0RqYAbuU_vgnfkTU998oG9bV7OFUaG0JDbz8UTnElrT4HN0izBFkE"/>
+<div class="absolute top-3 left-3 bg-secondary-container text-white text-[11px] font-bold px-2 py-1 rounded-full shadow-lg">
+                            40% OFF
+                        </div>
+<button class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-on-surface-variant p-2 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="font-headline font-bold text-on-surface text-base mb-1 line-clamp-1">Classic Burger</h3>
+<p class="font-label text-xs text-on-surface-variant mb-3">Burger King</p>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-on-surface-variant line-through text-[11px] font-medium leading-tight">$12.00</span>
+<span class="text-primary font-bold text-lg leading-tight">$7.20</span>
+</div>
+<button class="bg-primary-container hover:bg-primary text-white p-2 rounded-lg transition-colors active:scale-90">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_8px_20px_rgba(19,27,46,0.04)] transition-all duration-300">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Sushi Platter" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="elegant assorted sushi platter with salmon nigiri, tuna rolls, and wasabi presented on a black stone plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVF2ORplJ9iLGgmvqBecKj4yX2cP-lNhy0yY5e02Kg0dBKyQw3bsUCjLfB8wcSslTewSWB00gMMoS1_8qr-Stb-OhbtieU41CgJtLS-wzCwW1bcet6ZxTwaZ38RS5fp0vFJ8xIRT1uaxh12DThkRGP31UEg9mPlnGvNFW0RGXV9u_EhXnhWwgJDP5rSu9l5INs8wpqeEz-ivAba26IVtc4VZkFP4IXaOT5hlyXb41XT73gIod3yGIQixTuRKOXZHknWUr7AaoyTFg"/>
+<div class="absolute top-3 left-3 bg-secondary-container text-white text-[11px] font-bold px-2 py-1 rounded-full shadow-lg">
+                            30% OFF
+                        </div>
+<button class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-on-surface-variant p-2 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="font-headline font-bold text-on-surface text-base mb-1 line-clamp-1">Sushi Deluxe</h3>
+<p class="font-label text-xs text-on-surface-variant mb-3">Zen Sushi</p>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-on-surface-variant line-through text-[11px] font-medium leading-tight">$35.00</span>
+<span class="text-primary font-bold text-lg leading-tight">$24.50</span>
+</div>
+<button class="bg-primary-container hover:bg-primary text-white p-2 rounded-lg transition-colors active:scale-90">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_8px_20px_rgba(19,27,46,0.04)] transition-all duration-300">
+<div class="relative aspect-[4/5] overflow-hidden">
+<img alt="Pesto Pasta" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="creamy green pesto pasta with roasted pine nuts and parmesan cheese in a minimalist white bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNdYZOoJsZuC7AkNm2lWDa-EG7bgfTH8JVyt3Ag0jiY_ZdRjpUjAJWiZH_kSZNLnch7tDVldIkLLKbOvqTPCFEB3sRKVO7qMHutEoKyTcRrvsmeBn0LHrtWRcEXkefno15VrVi76lfBgck88I9s82sc1P8cbUoavtgQr0jbEGqSyidVCVv1cflnEwjZ6s9XrTZG3De8RnTPNWC5THV8cyLziuAMZe8tYDEOVe7GFa0rizWJ_g9LdsGV-I78W2cv3V0lHtTkyaCyec"/>
+<div class="absolute top-3 left-3 bg-secondary-container text-white text-[11px] font-bold px-2 py-1 rounded-full shadow-lg">
+                            60% OFF
+                        </div>
+<button class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-on-surface-variant p-2 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[20px]" data-icon="favorite">favorite</span>
+</button>
+</div>
+<div class="p-4 flex flex-col flex-grow">
+<h3 class="font-headline font-bold text-on-surface text-base mb-1 line-clamp-1">Pesto Genovese</h3>
+<p class="font-label text-xs text-on-surface-variant mb-3">Local Bistro</p>
+<div class="mt-auto flex items-center justify-between">
+<div class="flex flex-col">
+<span class="text-on-surface-variant line-through text-[11px] font-medium leading-tight">$18.00</span>
+<span class="text-primary font-bold text-lg leading-tight">$7.20</span>
+</div>
+<button class="bg-primary-container hover:bg-primary text-white p-2 rounded-lg transition-colors active:scale-90">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-6 py-3 pb-safe bg-white dark:bg-slate-950 shadow-[0_-8px_24px_rgba(19,27,46,0.05)] rounded-t-[32px]">
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-green-600 dark:hover:text-green-400 active:scale-90 transition-transform duration-150">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-green-500 dark:bg-green-600 text-white rounded-full p-3 active:scale-90 transition-transform duration-150">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium">Search</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-green-600 dark:hover:text-green-400 active:scale-90 transition-transform duration-150">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium">Orders</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-3 hover:text-green-600 dark:hover:text-green-400 active:scale-90 transition-transform duration-150">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Be_Vietnam_Pro'] text-[11px] font-medium">Profile</span>
+</div>
+</nav>
+<!-- Floating Filter Button -->
+<button class="fixed bottom-24 right-6 bg-secondary-container text-white p-4 rounded-full shadow-lg active:scale-95 transition-transform z-40">
+<span class="material-symbols-outlined" data-icon="filter_list">filter_list</span>
+</button>
+</body></html>

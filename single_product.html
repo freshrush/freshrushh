@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Biryani Bliss - Authentic Flavors</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#dae2fd",
+              "primary-container": "#22c55e",
+              "error": "#ba1a1a",
+              "surface-tint": "#006e2f",
+              "surface-container-highest": "#dae2fd",
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "secondary-fixed-dim": "#ffb68b",
+              "on-tertiary-fixed": "#002113",
+              "on-primary-fixed": "#002109",
+              "inverse-primary": "#4ae176",
+              "on-secondary-fixed-variant": "#753400",
+              "on-primary-fixed-variant": "#005321",
+              "surface-dim": "#d2d9f4",
+              "outline-variant": "#bccbb9",
+              "surface-bright": "#faf8ff",
+              "on-surface": "#131b2e",
+              "tertiary-fixed": "#6ffbbe",
+              "inverse-surface": "#283044",
+              "on-tertiary-container": "#004a31",
+              "on-secondary-container": "#592600",
+              "tertiary-fixed-dim": "#4edea3",
+              "surface-container": "#eaedff",
+              "on-surface-variant": "#3d4a3d",
+              "on-tertiary-fixed-variant": "#005236",
+              "tertiary-container": "#28c38a",
+              "surface-container-high": "#e2e7ff",
+              "secondary-fixed": "#ffdbc8",
+              "error-container": "#ffdad6",
+              "secondary": "#994700",
+              "outline": "#6d7b6c",
+              "on-error-container": "#93000a",
+              "background": "#faf8ff",
+              "tertiary": "#006c49",
+              "surface": "#faf8ff",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-low": "#f2f3ff",
+              "secondary-container": "#fb7800",
+              "primary": "#006e2f",
+              "on-tertiary": "#ffffff",
+              "on-error": "#ffffff",
+              "on-background": "#131b2e",
+              "primary-fixed": "#6bff8f",
+              "primary-fixed-dim": "#4ae176",
+              "on-primary-container": "#004b1e",
+              "inverse-on-surface": "#eef0ff",
+              "on-secondary-fixed": "#321200"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container/30">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex items-center justify-between px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-green-700 dark:text-green-500 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors active:scale-95 duration-200 p-2 rounded-full">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="font-plus-jakarta text-2xl font-bold tracking-tight text-green-700 dark:text-green-500">Biryani Bliss</h1>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-green-700 dark:text-green-500 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 transition-colors active:scale-95 duration-200 p-2 rounded-full">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Search & Discovery -->
+<section class="mb-8">
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none text-on-surface-variant/60">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="w-full bg-surface-container-low border-none rounded-DEFAULT py-4 pl-12 pr-4 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all placeholder:text-on-surface-variant/50 text-body-lg" placeholder="Search for the best biryani..." type="text"/>
+</div>
+</section>
+<!-- Editorial Hero Header -->
+<section class="mb-10">
+<h2 class="font-headline text-headline-lg font-extrabold tracking-tight text-on-surface leading-tight mb-2">
+                The Living <span class="text-primary">Pantry</span>
+</h2>
+<p class="text-on-surface-variant max-w-md">Sourced from the finest kitchens, delivered with premium precision.</p>
+</section>
+<!-- Category Filters -->
+<section class="mb-8 -mx-6 px-6 overflow-x-auto hide-scrollbar flex gap-3">
+<button class="px-6 py-2.5 rounded-full bg-primary-container text-on-primary font-semibold whitespace-nowrap shadow-md shadow-primary-container/20">All</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors whitespace-nowrap">Chicken</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors whitespace-nowrap">Mutton</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors whitespace-nowrap">Veg</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest transition-colors whitespace-nowrap">Egg</button>
+</section>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-2xl hover:shadow-on-surface/5 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Steaming plate of authentic hyderabadi chicken biryani with saffron rice, boiled egg, and fresh coriander on a rustic table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVDbuAukY8wDFWKk6v8rgNZX7yHHB_sUyySzmrRkE1Tfglzt1POaq2YB3VeNjNQt95Pc1spxIyCsaZyv9108gpRbSp-YZfevURBwaH9C1mwCm-Vow1A3ZNWoIU7lcfDWzXFAvFkajugz4E1jvFxIXXADpI4MzwdTEVZgkakMf1wOZJOy4xUjtWu-wf9uJepzwilrY2wAj85uPg6wIfFALnKhoB5gQ7XSRbXpsBHHhIwP3CW-nMed5R-t0aRmehToLMgg7MifLVPjo"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-yellow-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-bold">4.8</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Special Chicken Biryani</h3>
+<p class="text-on-surface-variant text-sm">Biryani Hub • 25 mins</p>
+</div>
+<span class="font-headline text-xl font-extrabold text-primary">₹250</span>
+</div>
+<button class="w-full mt-4 bg-gradient-to-r from-primary to-primary-container text-on-primary py-3 rounded-DEFAULT font-bold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-2xl hover:shadow-on-surface/5 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Slow cooked mutton biryani in a traditional clay pot surrounded by aromatic spices and yogurt dip" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU7yEyWm10rN4QNQM-Dmfom5ma-WAK6Y19ZTt4_yfhl4GUPoOhkxjPOIzXAgxlRpSyQWgXh9Mq7BfaJgaTOv20arRy6Tqx7b9bAHXVQxRKrlC90bl8cJ_cF9sVagg3wc7LHv0szfw01gaR-VNG8TS-vzM_a8oIGwwVhNE1K3jNBiSd5gvBtfkuzCeo715rutPMFbvwDbi9T00_Ax4aMIpqShdq3ygwDuCvleHqDTGOWxBZugRFA_jjzIEmGrTY8ljkzsHbgiCzgAI"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-yellow-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-bold">4.9</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Royal Mutton Dum Biryani</h3>
+<p class="text-on-surface-variant text-sm">The Mughal Room • 40 mins</p>
+</div>
+<span class="font-headline text-xl font-extrabold text-primary">₹420</span>
+</div>
+<button class="w-full mt-4 bg-gradient-to-r from-primary to-primary-container text-on-primary py-3 rounded-DEFAULT font-bold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-2xl hover:shadow-on-surface/5 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Lush vegetarian biryani topped with fried onions, cashews and mint leaves served in a silver bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7FQ5e8_sLlHsS6RgCvJ-9qCK70zZHgvMjxHNeUF3cZMWdMCs1mwQD6ulJNe1Diaaq7BE4ulT9Lk32wGqWI98gtaq2HtJkP7PMs3CIVjGTfUoQjbIqTDjInVNbTS5ndRPuHaVQYkUloYOE22mt_nNa1HMVBca_vOdm4vLTw4X2IIbUNtTy_X6AgKQ9hm3hl3bRMFYdtRCDZLSXbJWcPeh7LxQXRAHekAjplxmbd-96ZWHUZddLfjPMFU9xFiRrFSf8DiIG4DbNGAA"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-yellow-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-bold">4.5</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Garden Fresh Veg Biryani</h3>
+<p class="text-on-surface-variant text-sm">Green Leaf Bistro • 20 mins</p>
+</div>
+<span class="font-headline text-xl font-extrabold text-primary">₹180</span>
+</div>
+<button class="w-full mt-4 bg-gradient-to-r from-primary to-primary-container text-on-primary py-3 rounded-DEFAULT font-bold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-2xl hover:shadow-on-surface/5 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Street style egg biryani with three halved boiled eggs nestled in spicy yellow rice with chili garnish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfw83ZsnLWhgSf4d5W009SxHhfpKWHPCOP6AD9Lr65rWJtZ8JZG29cWKA92wS6F7iJESrzjQ5UyGHlJSART907PUq8Jwck-XjLnl8lN1qAAiJFy7vM6gYwrmY2_xf0FQ4SG8EE711U3taAo4zmHnqUnmvUD8E1WDaQw1vTabd2Md6U7yExiNDLc0_Cx_ovqUiUssXUlIfH_AAX_heSHyGncQHXiGCN4sGvKCW-g3saGjnk_qY56DYHfHcEK8xOSnKSTGPJLhAkRWc"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-yellow-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-bold">4.6</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Spicy Egg Delight Biryani</h3>
+<p class="text-on-surface-variant text-sm">Anda Junction • 15 mins</p>
+</div>
+<span class="font-headline text-xl font-extrabold text-primary">₹160</span>
+</div>
+<button class="w-full mt-4 bg-gradient-to-r from-primary to-primary-container text-on-primary py-3 rounded-DEFAULT font-bold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-2xl hover:shadow-on-surface/5 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury lobster biryani garnished with gold leaf and served in an elegant fine dining setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRd2KnC6H_prT__3TG8WvB3bpC5KDwLQVBjxDjTJhE_PFcIsmqmBhU8FR6HORd3gzX6amKVwh3W832A__IAduBZtYdfyLTWUgWD9t3Td6ALrVep-fehGlaXHvkJMxWhLziDOy0c3eLSC9COZWGsdlsDTpn1sZP4BiIHmQFOIcKZnmEuYEL2emG53RJ3G3BB6KCulI_83qIi-ytwmzVSXYGYluFhEYaUOwMfWafsqfV4kHvQx52vCsYHwUxd5qozbuzzsuoXZ7nGws"/>
+<div class="absolute top-4 left-4 bg-secondary-container text-on-secondary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-lg shadow-secondary-container/20">Chef's Choice</div>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-yellow-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-bold">5.0</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Signature Prawn Biryani</h3>
+<p class="text-on-surface-variant text-sm">Coastal Cravings • 35 mins</p>
+</div>
+<span class="font-headline text-xl font-extrabold text-primary">₹550</span>
+</div>
+<button class="w-full mt-4 bg-gradient-to-r from-primary to-primary-container text-on-primary py-3 rounded-DEFAULT font-bold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="bg-surface-container-lowest rounded-lg overflow-hidden group hover:shadow-2xl hover:shadow-on-surface/5 transition-all duration-300">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Kolkata style chicken biryani with large potato and egg in light aromatic basmati rice" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIflRNP2g8HxeNkzN4bksB3GAE7NQ4krje2dmD98jFwAXIXO-aCEqk-8YnejzpqzwJXADRHkOIPv4-2WTEmj1LuALILuDGP4RzTzXHdubmQqc7x1hnqJg87iBle1iAkfFqrq93Gqh5yO9roinT9r03X1CSvgvdpL4_IIjiOgtnh9AE1ZVfpLSB49YElZEJfa6shy5YYlg_B1XiORAjuHMAaxKJgxgxGTlxpgEJ1ptkQa5czjg8yfaHPuekhiO0-EijujdaiULmjEU"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-yellow-500 text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-label-md font-bold">4.7</span>
+</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Kolkata Special Biryani</h3>
+<p class="text-on-surface-variant text-sm">Bengali Bites • 30 mins</p>
+</div>
+<span class="font-headline text-xl font-extrabold text-primary">₹220</span>
+</div>
+<button class="w-full mt-4 bg-gradient-to-r from-primary to-primary-container text-on-primary py-3 rounded-DEFAULT font-bold flex items-center justify-center gap-2 active:scale-[0.98] transition-transform">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
+</article>
+</div>
+</main>
+<!-- Floating View Cart Bar -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 w-[90%] max-w-md z-50">
+<button class="w-full bg-on-surface text-white rounded-full py-4 px-6 flex items-center justify-between shadow-2xl shadow-on-surface/20 active:scale-95 transition-transform">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-2 rounded-full">
+<span class="material-symbols-outlined text-white text-lg" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+</div>
+<div class="text-left">
+<p class="text-xs text-white/60 font-medium">3 Items Added</p>
+<p class="font-bold">View Cart</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-bold text-lg">₹670</span>
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</button>
+</div>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white dark:bg-slate-950 rounded-t-[32px] border-t border-slate-100 dark:border-slate-800 shadow-[0_-4px_24px_rgba(19,27,46,0.08)]">
+<a class="flex flex-col items-center justify-center bg-green-100 dark:bg-green-900/40 text-green-800 dark:text-green-200 rounded-2xl px-5 py-2 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-be-vietnam text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 hover:text-green-600 dark:hover:text-green-400 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<span class="font-be-vietnam text-[10px] font-medium">Orders</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 hover:text-green-600 dark:hover:text-green-400 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="font-be-vietnam text-[10px] font-medium">Cart</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 px-5 py-2 hover:text-green-600 dark:hover:text-green-400 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-be-vietnam text-[10px] font-medium">Profile</span>
+</a>
+</nav>
+</body></html>
