@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary": "#994700",
+              "primary": "#006e2f",
+              "on-error": "#ffffff",
+              "on-primary-container": "#004b1e",
+              "tertiary-fixed": "#6ffbbe",
+              "surface-variant": "#dae2fd",
+              "outline-variant": "#bccbb9",
+              "background": "#faf8ff",
+              "on-tertiary": "#ffffff",
+              "on-error-container": "#93000a",
+              "inverse-on-surface": "#eef0ff",
+              "error": "#ba1a1a",
+              "on-tertiary-fixed": "#002113",
+              "on-tertiary-container": "#004a31",
+              "on-secondary-fixed": "#321200",
+              "surface-dim": "#d2d9f4",
+              "primary-fixed": "#6bff8f",
+              "on-background": "#131b2e",
+              "surface": "#faf8ff",
+              "tertiary": "#006c49",
+              "tertiary-fixed-dim": "#4edea3",
+              "outline": "#6d7b6c",
+              "surface-tint": "#006e2f",
+              "inverse-primary": "#4ae176",
+              "surface-container": "#eaedff",
+              "on-primary-fixed": "#002109",
+              "primary-fixed-dim": "#4ae176",
+              "primary-container": "#22c55e",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#28c38a",
+              "surface-container-high": "#e2e7ff",
+              "on-secondary": "#ffffff",
+              "on-surface": "#131b2e",
+              "on-primary-fixed-variant": "#005321",
+              "surface-container-low": "#f2f3ff",
+              "secondary-fixed": "#ffdbc8",
+              "secondary-container": "#fb7800",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed-variant": "#005236",
+              "on-surface-variant": "#3d4a3d",
+              "on-secondary-fixed-variant": "#753400",
+              "on-secondary-container": "#592600",
+              "inverse-surface": "#283044",
+              "surface-bright": "#faf8ff",
+              "surface-container-highest": "#dae2fd",
+              "secondary-fixed-dim": "#ffb68b",
+              "on-primary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-green-100/20 dark:border-slate-800 shadow-[0_24px_24px_rgba(19,27,46,0.08)] flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-green-700 dark:text-green-400" data-icon="storefront">storefront</span>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-xl font-extrabold text-green-700 dark:text-green-400">FreshRush Admin</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-slate-500 hover:bg-green-50 p-2 rounded-full transition-colors" data-icon="notifications">notifications</button>
+<div class="h-10 w-10 rounded-full bg-surface-container-highest overflow-hidden border-2 border-primary-container">
+<img alt="Shop Manager Portrait" class="w-full h-full object-cover" data-alt="professional headshot of a friendly store manager in a clean modern office environment with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrv4FooBDwilEL_4Az8erY0jU683TX-VMOnVBzBF_NWm-sk1tzr1pP6jssucv56W-hc3bhQ8hTifaXfrYbIi-KwJHEVSBdLcx5qBAK8mT05JvZ802VyiokoAtqFwYu1pY2xZvRoPtGqFLKbYdskCf0SUyVF8EA5z28WcDvVuolLB1eUyzv35MH3y3Fzk5mWGQhWedl0A-3gxh6_DDuA8J6WvBjXNBP3JKu7qXjBILQf81yKKRfMG9YByAf76vSSphAjieOJBRx85A"/>
+</div>
+</div>
+</header>
+<!-- NavigationDrawer (Web only) -->
+<aside class="hidden md:flex h-screen w-64 fixed left-0 top-0 bg-slate-50 dark:bg-slate-950 flex flex-col p-4 gap-2 z-40 pt-20 border-r border-slate-100">
+<div class="mb-6 px-2">
+<p class="text-lg font-black text-green-700 font-['Plus_Jakarta_Sans']">Green Valley Organics</p>
+<p class="text-xs text-slate-500 font-medium uppercase tracking-widest mt-1">Admin Terminal</p>
+</div>
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-4 py-3 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded-xl font-bold transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-sm">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:text-green-600 hover:bg-slate-200/50 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-sm">Orders</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:text-green-600 hover:bg-slate-200/50 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-sm">Menu</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:text-green-600 hover:bg-slate-200/50 transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-sm">Settings</span>
+</a>
+</nav>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 pt-24 pb-32 px-4 md:px-8">
+<div class="max-w-6xl mx-auto">
+<!-- Header Section -->
+<div class="mb-10">
+<h2 class="text-3xl md:text-4xl font-headline font-extrabold tracking-tight text-on-surface mb-2">Today's Overview</h2>
+<p class="text-on-surface-variant font-body">Manage your store performance and real-time logistics.</p>
+</div>
+<!-- Bento Stats Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<!-- Revenue Card -->
+<div class="bg-gradient-to-br from-primary to-primary-container p-8 rounded-xl text-white flex flex-col justify-between min-h-[180px] shadow-lg">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-white/80 bg-white/10 p-2 rounded-lg" data-icon="payments">payments</span>
+<span class="text-xs font-bold bg-white/20 px-2 py-1 rounded-full">+12.5%</span>
+</div>
+<div>
+<p class="text-sm font-medium text-white/80 font-label mb-1 uppercase tracking-wider">Total Revenue</p>
+<p class="text-4xl font-headline font-extrabold">$12,450.00</p>
+</div>
+</div>
+<!-- Orders Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between min-h-[180px] shadow-sm border border-outline-variant/20">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-secondary-container bg-secondary-fixed p-2 rounded-lg" data-icon="local_mall">local_mall</span>
+<span class="text-xs font-bold text-primary px-2 py-1 bg-primary-fixed rounded-full">48 New</span>
+</div>
+<div>
+<p class="text-sm font-medium text-on-surface-variant font-label mb-1 uppercase tracking-wider">Total Orders</p>
+<p class="text-4xl font-headline font-extrabold">156</p>
+</div>
+</div>
+<!-- Customers Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between min-h-[180px] shadow-sm border border-outline-variant/20">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-tertiary bg-tertiary-fixed p-2 rounded-lg" data-icon="group">group</span>
+<span class="text-xs font-bold text-tertiary px-2 py-1 bg-tertiary-fixed rounded-full">Active Now</span>
+</div>
+<div>
+<p class="text-sm font-medium text-on-surface-variant font-label mb-1 uppercase tracking-wider">New Customers</p>
+<p class="text-4xl font-headline font-extrabold">34</p>
+</div>
+</div>
+</div>
+<!-- Recent Orders Section -->
+<section class="bg-surface-container-lowest rounded-lg p-6 md:p-8 shadow-sm border border-outline-variant/20">
+<div class="flex justify-between items-center mb-8">
+<h3 class="text-xl font-headline font-bold">Recent Orders</h3>
+<button class="text-primary font-bold text-sm hover:underline">View All</button>
+</div>
+<div class="overflow-x-auto hide-scrollbar">
+<table class="w-full text-left border-separate border-spacing-y-4">
+<thead>
+<tr class="text-on-surface-variant text-xs uppercase tracking-widest font-bold">
+<th class="pb-2 px-4">Order ID</th>
+<th class="pb-2 px-4">Customer</th>
+<th class="pb-2 px-4">Amount</th>
+<th class="pb-2 px-4">Status</th>
+<th class="pb-2 px-4">Action</th>
+</tr>
+</thead>
+<tbody class="text-sm">
+<!-- Order Row 1 -->
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-low transition-colors rounded-xl">
+<td class="py-4 px-4 font-bold rounded-l-xl">#FR-9021</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Customer" class="w-full h-full object-cover" data-alt="portrait of a young man smiling in natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3m6jLNw5S9QbmDPca3vgRPL9WVlC1d7nzGpnBASbv1w5WUOGv_eCEjQZvIrMJ6es-RtEhLrr7IZmA4AiPwQVXJGVXc_IVX1Jz11z0cdUCXZKlc8a9Pex2i8oT40Nc6GZOQ465hx_b_XsPBwztA349GPOafycWPq_bkJqXR4sUIdSyTN3Myh7ZKZEeW4igGvmTqEfm5Y3t_4YOPpKXa56VIf1YCFmQ1PhopC59z4fraPCtoaOKJeN6LDdcejCspY1sxkX6PwyPQxU"/>
+</div>
+<span class="font-medium">Elena Smith</span>
+</div>
+</td>
+<td class="py-4 px-4 font-bold text-on-surface">$45.50</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 bg-secondary-fixed text-on-secondary-fixed rounded-full text-xs font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                                        Preparing
+                                    </span>
+</td>
+<td class="py-4 px-4 rounded-r-xl">
+<button class="material-symbols-outlined text-on-surface-variant" data-icon="chevron_right">chevron_right</button>
+</td>
+</tr>
+<!-- Order Row 2 -->
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-low transition-colors rounded-xl">
+<td class="py-4 px-4 font-bold rounded-l-xl">#FR-8842</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Customer" class="w-full h-full object-cover" data-alt="lifestyle portrait of a middle-aged woman in a modern kitchen setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJOPDftjZ_Hr1tyPmkzOma38jWuTeNCX5WtTn0Jj7AG9_ubZ0xKSJHcDJBVFFZjq5qZaM_d431u1aoOeMdw9Hg_JbYTDXf-mkiUz5iCp1O3mxS-YWzYtbpDm7zHd0zzSFyjmhAFB7_Rfcv8XvMHHksB-SiaT85sB4vPS3iZuQzT2WUPvswjRssKM47sdngpNG79rbz0rkFFwRjfVypaQQlE2ViQxuBM7YfuqxyI34rOQQH-h2BBX4PTxdAhf0K8_IVcpA1FzQxBmU"/>
+</div>
+<span class="font-medium">James Miller</span>
+</div>
+</td>
+<td class="py-4 px-4 font-bold text-on-surface">$128.00</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-highest text-on-surface-variant rounded-full text-xs font-bold">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                                        Pending
+                                    </span>
+</td>
+<td class="py-4 px-4 rounded-r-xl">
+<button class="material-symbols-outlined text-on-surface-variant" data-icon="chevron_right">chevron_right</button>
+</td>
+</tr>
+<!-- Order Row 3 -->
+<tr class="bg-surface-container-low/50 hover:bg-surface-container-low transition-colors rounded-xl">
+<td class="py-4 px-4 font-bold rounded-l-xl">#FR-8711</td>
+<td class="py-4 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high overflow-hidden">
+<img alt="Customer" class="w-full h-full object-cover" data-alt="professional portrait of a young person with soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe7NdEGuDmWYHwCHyOmGfFAIc1xpqPdx3I4FLMJrqubEKnugTdBQve0dgjfiJjy4d836JWt1Y1Nt_HI_XZX1fHHYA7MGLQmJCWtLpxon3qUvv4LsvYFytKsBOf8VVg_BGHwIaeVxY0ZGposNTQ32wnDImoqn1ZMqMEz9n-Y8D6qSEkJ9Iw_YxCFuKVTe8FFk-HfMsCG3rSwepInf9NUbObrmJWq6MuE6A5DbEP50eSeXtO9Q4Vwp6HsFx2ICH-ZPn9E8CChxf4CnY"/>
+</div>
+<span class="font-medium">Liam Wilson</span>
+</div>
+</td>
+<td class="py-4 px-4 font-bold text-on-surface">$82.20</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant rounded-full text-xs font-bold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                                        Out for Delivery
+                                    </span>
+</td>
+<td class="py-4 px-4 rounded-r-xl">
+<button class="material-symbols-outlined text-on-surface-variant" data-icon="chevron_right">chevron_right</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 md:hidden bg-white dark:bg-slate-900 shadow-2xl rounded-t-[32px] z-50">
+<a class="flex flex-col items-center justify-center bg-green-500 text-white rounded-2xl p-2 w-16 h-14 scale-110 duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="dashboard" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 hover:text-green-600" href="#">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] font-medium">Orders</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 hover:text-green-600" href="#">
+<span class="material-symbols-outlined" data-icon="category">category</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] font-medium">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 hover:text-green-600" href="#">
+<span class="material-symbols-outlined" data-icon="settings_gear">settings</span>
+<span class="font-['Be_Vietnam_Pro'] text-[10px] font-medium">Settings</span>
+</a>
+</nav>
+<!-- FAB (Suppressed based on context: Dashboard usually doesn't need primary FAB if Top/Bottom nav covers main actions) -->
+</body></html>

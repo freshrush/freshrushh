@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FreshRush Admin | Category Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary": "#994700",
+                        "primary": "#006e2f",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#004b1e",
+                        "tertiary-fixed": "#6ffbbe",
+                        "surface-variant": "#dae2fd",
+                        "outline-variant": "#bccbb9",
+                        "background": "#faf8ff",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#eef0ff",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#002113",
+                        "on-tertiary-container": "#004a31",
+                        "on-secondary-fixed": "#321200",
+                        "surface-dim": "#d2d9f4",
+                        "primary-fixed": "#6bff8f",
+                        "on-background": "#131b2e",
+                        "surface": "#faf8ff",
+                        "tertiary": "#006c49",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "outline": "#6d7b6c",
+                        "surface-tint": "#006e2f",
+                        "inverse-primary": "#4ae176",
+                        "surface-container": "#eaedff",
+                        "on-primary-fixed": "#002109",
+                        "primary-fixed-dim": "#4ae176",
+                        "primary-container": "#22c55e",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#28c38a",
+                        "surface-container-high": "#e2e7ff",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#131b2e",
+                        "on-primary-fixed-variant": "#005321",
+                        "surface-container-low": "#f2f3ff",
+                        "secondary-fixed": "#ffdbc8",
+                        "secondary-container": "#fb7800",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "on-surface-variant": "#3d4a3d",
+                        "on-secondary-fixed-variant": "#753400",
+                        "on-secondary-container": "#592600",
+                        "inverse-surface": "#283044",
+                        "surface-bright": "#faf8ff",
+                        "surface-container-highest": "#dae2fd",
+                        "secondary-fixed-dim": "#ffb68b",
+                        "on-primary": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-green-100/20 dark:border-slate-800 shadow-[0_24px_24px_rgba(19,27,46,0.08)] flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-green-700 dark:text-green-400" style="font-size: 24px;">storefront</span>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold tracking-tight text-xl font-extrabold text-green-700 dark:text-green-400">FreshRush Admin</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden border-2 border-primary-container">
+<img alt="Shop Manager Portrait" data-alt="Professional shop manager portrait in business casual attire with a friendly expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCskxTk6Vz6MjxvqVB6hvGuSMrwaW-GYEQ50FE6PFEtMHRgfy3bozUrslxrQbPBQclhXbDnBKylMoMuXFVgmDGDyGYT_-4mUPF1TkuUUBX1-NhOyXYnTLW9tDk9NPpEhR7XUBOJB8PEhfC57suZSNzR5OzoupzenUUlwS3UBRG5VyGRYnakLio5RehlHYHyBRDL2C8HB8I0Y1xskf0AeJyisqPxwnpEjdLnBuaLRBb-C_c27nUM0ctPqwidUYKauG0PxZ0QqGNT1no"/>
+</div>
+</div>
+</header>
+<!-- NavigationDrawer (Desktop) -->
+<aside class="hidden md:flex flex-col p-4 gap-2 h-screen w-64 fixed left-0 top-0 bg-slate-50 dark:bg-slate-950 pt-20">
+<div class="px-4 mb-8">
+<h2 class="text-lg font-black text-green-700 font-headline">Green Valley Organics</h2>
+<p class="text-xs text-slate-500 font-label">Admin Terminal</p>
+</div>
+<nav class="space-y-1">
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:text-green-600 hover:bg-slate-200/50 transition-all duration-300 ease-in-out font-['Plus_Jakarta_Sans'] font-medium text-sm" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span>Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:text-green-600 hover:bg-slate-200/50 transition-all duration-300 ease-in-out font-['Plus_Jakarta_Sans'] font-medium text-sm" href="#">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span>Orders</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 rounded-xl font-bold font-['Plus_Jakarta_Sans'] text-sm transition-all duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined">restaurant_menu</span>
+<span>Menu</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 text-slate-600 dark:text-slate-400 hover:text-green-600 hover:bg-slate-200/50 transition-all duration-300 ease-in-out font-['Plus_Jakarta_Sans'] font-medium text-sm" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</a>
+</nav>
+</aside>
+<!-- Main Canvas -->
+<main class="md:ml-64 pt-24 pb-32 px-6 md:px-12">
+<div class="max-w-6xl mx-auto">
+<!-- Header & Action Row -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div>
+<h2 class="text-on-surface font-headline font-extrabold text-4xl tracking-tight mb-2">Category Management</h2>
+<p class="text-on-surface-variant font-body text-lg">Organize your offerings into customer-friendly sections.</p>
+</div>
+<button class="flex items-center gap-2 bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-DEFAULT font-headline font-bold shadow-lg active:scale-95 transition-all duration-200">
+<span class="material-symbols-outlined">add_circle</span>
+                    Add New Category
+                </button>
+</div>
+<!-- Bento Grid Layout for Categories -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Category Card: Starters -->
+<div class="group relative overflow-hidden bg-surface-container-lowest rounded-lg p-8 shadow-[0_24px_24px_rgba(19,27,46,0.04)] hover:shadow-[0_32px_48px_rgba(19,27,46,0.1)] transition-all duration-300">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/10 rounded-bl-[100px] -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+<div class="relative z-10">
+<div class="w-14 h-14 bg-primary-container text-on-primary-fixed-variant rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" style="font-size: 32px;">tapas</span>
+</div>
+<h3 class="text-2xl font-headline font-extrabold text-on-surface mb-2">Starters</h3>
+<p class="text-on-surface-variant font-label font-medium text-sm uppercase tracking-widest mb-6">12 ITEMS ACTIVE</p>
+<div class="flex items-center justify-between border-t border-surface-container-high pt-6">
+<span class="text-sm font-body text-on-surface-variant">Available to users</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Category Card: Main Course -->
+<div class="group relative overflow-hidden bg-surface-container-lowest rounded-lg p-8 shadow-[0_24px_24px_rgba(19,27,46,0.04)] hover:shadow-[0_32px_48px_rgba(19,27,46,0.1)] transition-all duration-300">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container/10 rounded-bl-[100px] -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+<div class="relative z-10">
+<div class="w-14 h-14 bg-secondary-container text-white rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" style="font-size: 32px;">dinner_dining</span>
+</div>
+<h3 class="text-2xl font-headline font-extrabold text-on-surface mb-2">Main Course</h3>
+<p class="text-on-surface-variant font-label font-medium text-sm uppercase tracking-widest mb-6">24 ITEMS ACTIVE</p>
+<div class="flex items-center justify-between border-t border-surface-container-high pt-6">
+<span class="text-sm font-body text-on-surface-variant">Available to users</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Category Card: Snacks (Disabled state) -->
+<div class="group relative overflow-hidden bg-surface-container-low/50 rounded-lg p-8 shadow-sm transition-all duration-300 border border-outline-variant/10">
+<div class="relative z-10">
+<div class="w-14 h-14 bg-surface-container-high text-on-surface-variant rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" style="font-size: 32px;">cookie</span>
+</div>
+<h3 class="text-2xl font-headline font-extrabold text-on-surface/50 mb-2">Snacks</h3>
+<p class="text-on-surface-variant/50 font-label font-medium text-sm uppercase tracking-widest mb-6">8 ITEMS HIDDEN</p>
+<div class="flex items-center justify-between border-t border-outline-variant/20 pt-6">
+<span class="text-sm font-body text-on-surface-variant/50">Disabled</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Category Card: Beverages -->
+<div class="group relative overflow-hidden bg-surface-container-lowest rounded-lg p-8 shadow-[0_24px_24px_rgba(19,27,46,0.04)] hover:shadow-[0_32px_48px_rgba(19,27,46,0.1)] transition-all duration-300">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary-container/10 rounded-bl-[100px] -mr-8 -mt-8 transition-transform group-hover:scale-110"></div>
+<div class="relative z-10">
+<div class="w-14 h-14 bg-tertiary-container text-white rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" style="font-size: 32px;">local_bar</span>
+</div>
+<h3 class="text-2xl font-headline font-extrabold text-on-surface mb-2">Beverages</h3>
+<p class="text-on-surface-variant font-label font-medium text-sm uppercase tracking-widest mb-6">15 ITEMS ACTIVE</p>
+<div class="flex items-center justify-between border-t border-surface-container-high pt-6">
+<span class="text-sm font-body text-on-surface-variant">Available to users</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary-container"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Empty "Add New" Slate -->
+<button class="group border-2 border-dashed border-outline-variant/30 rounded-lg p-8 flex flex-col items-center justify-center gap-4 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center group-hover:bg-primary-container group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-size: 32px;">add</span>
+</div>
+<span class="font-headline font-bold text-on-surface-variant group-hover:text-primary">Create New Section</span>
+</button>
+</div>
+<!-- Stats & Insights Row (Editorial Tonal Separation) -->
+<section class="mt-20 p-10 bg-surface-container-low rounded-xl relative overflow-hidden">
+<div class="absolute right-0 top-0 h-full w-1/3 opacity-10">
+<img class="h-full w-full object-cover rounded-l-full" data-alt="Close-up of fresh vibrant organic vegetables with dramatic natural lighting and rich green textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkjkcsjMixx4t1W9wE7BO1_ZTitRVumHxDNmmRNlMEMx9yqBOGjI1nuMx9ApS5S0yO1v2uWl0-8XT9li54tufjioG4fb5dXQWUrJz935aTDYh7tf1k2hGwJbVJt9zVA5_DIhyb3bKcw1c_gii2d0B2Cab_IsSzxhIk-uTdVTQaA0z3gd9D9ApJzJfHNa6saQ2INqDD0UFSwtA95Xg70xpDFUGdKRrrziymwUvKBS3fyVYoShqdxDEOl8BE36WFYAeMgej1WtsU-Xw"/>
+</div>
+<div class="relative z-10 max-w-2xl">
+<h4 class="text-primary font-headline font-extrabold text-2xl mb-4">Inventory Insights</h4>
+<p class="text-on-surface-variant font-body leading-relaxed mb-8">Your "Main Course" category is currently generating 65% of your store revenue. Consider adding sub-categories to help customers navigate your largest section better.</p>
+<div class="flex gap-10">
+<div>
+<span class="block text-3xl font-headline font-black text-on-surface">59</span>
+<span class="text-xs font-label uppercase text-slate-500 tracking-wider">Total Products</span>
+</div>
+<div>
+<span class="block text-3xl font-headline font-black text-on-surface">04</span>
+<span class="text-xs font-label uppercase text-slate-500 tracking-wider">Active Categories</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-3 bg-white dark:bg-slate-900 rounded-t-[32px] z-50 shadow-[0_-4px_12px_rgba(0,0,0,0.05)] shadow-2xl">
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 font-['Be_Vietnam_Pro'] text-[10px] font-medium transition-all duration-200" href="#">
+<span class="material-symbols-outlined mb-1">dashboard</span>
+<span>Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 font-['Be_Vietnam_Pro'] text-[10px] font-medium transition-all duration-200" href="#">
+<span class="material-symbols-outlined mb-1">receipt_long</span>
+<span>Orders</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-green-500 text-white rounded-2xl p-2 w-16 h-14 scale-110 font-['Be_Vietnam_Pro'] text-[10px] font-medium transition-all duration-200" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">category</span>
+<span>Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 p-2 font-['Be_Vietnam_Pro'] text-[10px] font-medium transition-all duration-200" href="#">
+<span class="material-symbols-outlined mb-1">settings</span>
+<span>Settings</span>
+</a>
+</nav>
+</body></html>
