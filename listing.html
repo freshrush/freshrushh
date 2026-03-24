@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FreshRush | All Nearby Shops</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#dae2fd",
+              "on-error-container": "#93000a",
+              "on-background": "#131b2e",
+              "on-surface": "#131b2e",
+              "tertiary": "#006c49",
+              "inverse-on-surface": "#eef0ff",
+              "primary-container": "#22c55e",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#4edea3",
+              "on-tertiary": "#ffffff",
+              "primary-fixed-dim": "#4ae176",
+              "surface-container-low": "#f2f3ff",
+              "tertiary-container": "#28c38a",
+              "surface-container-highest": "#dae2fd",
+              "surface-tint": "#006e2f",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed-variant": "#005236",
+              "tertiary-fixed": "#6ffbbe",
+              "primary": "#006e2f",
+              "on-secondary-container": "#592600",
+              "inverse-primary": "#4ae176",
+              "on-primary-container": "#004b1e",
+              "on-secondary-fixed-variant": "#753400",
+              "outline-variant": "#bccbb9",
+              "surface": "#faf8ff",
+              "on-surface-variant": "#3d4a3d",
+              "on-primary-fixed-variant": "#005321",
+              "on-secondary-fixed": "#321200",
+              "surface-container-high": "#e2e7ff",
+              "surface-container": "#eaedff",
+              "on-tertiary-fixed": "#002113",
+              "secondary-fixed": "#ffdbc8",
+              "error-container": "#ffdad6",
+              "secondary-fixed-dim": "#ffb68b",
+              "on-tertiary-container": "#004a31",
+              "secondary": "#994700",
+              "on-primary": "#ffffff",
+              "error": "#ba1a1a",
+              "surface-dim": "#d2d9f4",
+              "primary-fixed": "#6bff8f",
+              "secondary-container": "#fb7800",
+              "inverse-surface": "#283044",
+              "on-secondary": "#ffffff",
+              "background": "#faf8ff",
+              "outline": "#6d7b6c",
+              "surface-bright": "#faf8ff",
+              "on-primary-fixed": "#002109"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        background-color: #faf8ff;
+        color: #131b2e;
+      }
+      h1, h2, h3 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- Top AppBar (Simplified for Navigation) -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-lg mx-auto">
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-container-high transition-colors active:scale-95" onclick="window.location.href='{{DATA:SCREEN:SCREEN_2}}'">
+<span class="material-symbols-outlined text-primary">arrow_back</span>
+</button>
+<h1 class="text-xl font-extrabold text-primary tracking-tight">All Nearby Shops</h1>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-600">tune</span>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-lg mx-auto">
+<!-- Search & Filter Section -->
+<section class="mb-8">
+<div class="relative mb-6">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-slate-400">search</span>
+</div>
+<input class="w-full bg-surface-container-low border-none rounded-DEFAULT py-4 pl-12 pr-4 focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-slate-400" placeholder="Search for stores or items..." type="text"/>
+</div>
+<!-- Filter Chips -->
+<div class="flex gap-3 overflow-x-auto pb-2 no-scrollbar">
+<button class="flex items-center gap-2 px-5 py-2.5 bg-primary-container text-on-primary font-semibold rounded-full whitespace-nowrap active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                    Rating
+                </button>
+<button class="flex items-center gap-2 px-5 py-2.5 bg-surface-container-high text-on-surface-variant font-medium rounded-full whitespace-nowrap hover:bg-surface-container-highest transition-colors active:scale-95" onclick="this.classList.toggle('bg-primary-container'); this.classList.toggle('text-on-primary'); this.classList.toggle('bg-surface-container-high'); this.classList.toggle('text-on-surface-variant');">
+                    Distance
+                </button>
+<button class="flex items-center gap-2 px-5 py-2.5 bg-surface-container-high text-on-surface-variant font-medium rounded-full whitespace-nowrap hover:bg-surface-container-highest transition-colors active:scale-95" onclick="this.classList.toggle('bg-primary-container'); this.classList.toggle('text-on-primary'); this.classList.toggle('bg-surface-container-high'); this.classList.toggle('text-on-surface-variant');">
+                    Fast Delivery
+                </button>
+<button class="flex items-center gap-2 px-5 py-2.5 bg-surface-container-high text-on-surface-variant font-medium rounded-full whitespace-nowrap hover:bg-surface-container-highest transition-colors active:scale-95" onclick="this.classList.toggle('bg-primary-container'); this.classList.toggle('text-on-primary'); this.classList.toggle('bg-surface-container-high'); this.classList.toggle('text-on-surface-variant');">
+                    Price
+                </button>
+</div>
+</section>
+<!-- Shop List (Vertical/Grid Hybrid) -->
+<section class="space-y-6">
+<!-- Shop Card 1 -->
+<a class="block group cursor-pointer bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(19,27,46,0.04)] hover:shadow-[0_8px_30px_rgba(19,27,46,0.08)] transition-all active:scale-[0.98]" href="{{DATA:SCREEN:SCREEN_6}}"><div class="relative h-48 w-full"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="vibrant outdoor farmers market stall with stacks of fresh organic red apples and green leafy vegetables under warm natural sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkV-fBV4DK5CqXpNrVd48ue5e2MLJiF4eyAV-whDMRzz4TiIKWXJzgSPUhpoLehv-9Bhf-EAh0u6G3vm1iCZ93-MNuHpn9PwdVHkGTMfZ54ozoKuECTAiCMtKENBudBTI293DJHCkT3x3PVJBwMITJwRhyiPbVUFf08IBXHp9pMoscJnFnOMfeqQTJrJByL4wWpbN5SUGotmzpBIFhBPH5iZhJn_qTlzzzZXnDl1Ihg_kP3YLDzgD3bJMAiZKWhOZgVDe68Fon26Q"/><div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-1 shadow-sm"><span class="material-symbols-outlined text-secondary-container text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="text-sm font-bold text-on-surface">4.8</span></div><div class="absolute bottom-4 left-4"><span class="bg-primary px-3 py-1 rounded-full text-[10px] font-bold text-white uppercase tracking-wider">Organic Certified</span></div></div><div class="p-5"><div class="flex justify-between items-start mb-1"><h3 class="text-lg font-bold text-on-surface">Green Valley Organics</h3><span class="text-primary font-bold text-sm">20-30 min</span></div><p class="text-slate-500 text-sm mb-4">Fresh produce • Local dairy • Artisanal pantry</p><div class="flex items-center gap-4 text-xs font-semibold text-slate-400"><div class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">distance</span>1.2 km</div><div class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">delivery_dining</span>Free Delivery</div></div></div></a>
+<!-- Shop Card 2 -->
+<div class="group cursor-pointer bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(19,27,46,0.04)] hover:shadow-[0_8px_30px_rgba(19,27,46,0.08)] transition-all active:scale-[0.98]">
+<div class="relative h-48 w-full">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="neatly organized premium grocery store aisle with luxury packaging and warm ambient lighting on wooden shelves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6LwjzYy5_jR5G3bmeUatOIjz5kn85INWObWhM4LjteyW3JGh_RYuea-FKJrCeMdVq956eUNILJBmrzb56OwLC087LJ8157l-oBhxwH1IpV5IUTZ8aRIoaZ1cb1iQ7zUN0OaGLBh51vaev59nN_OaiTs8LWD7tPLYMc7YLwIVpFMnl0zykqxULRzykaHTrbpJPxSz8tuEfKTWd4n_q-y218aVhAVgN31K4rwA8S53qCELd4S3YdHO-kpL24OZs8MBRAiEGRpwtS6s"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-secondary-container text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-sm font-bold text-on-surface">4.5</span>
+</div>
+<div class="absolute bottom-4 left-4">
+<span class="bg-secondary-container px-3 py-1 rounded-full text-[10px] font-bold text-white uppercase tracking-wider">Fastest Delivery</span>
+</div>
+</div>
+<div class="p-5">
+<div class="flex justify-between items-start mb-1">
+<h3 class="text-lg font-bold text-on-surface">Urban Pantry Express</h3>
+<span class="text-primary font-bold text-sm">10-15 min</span>
+</div>
+<p class="text-slate-500 text-sm mb-4">Daily essentials • Snacks • Quick meals</p>
+<div class="flex items-center gap-4 text-xs font-semibold text-slate-400">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">distance</span>
+                            0.8 km
+                        </div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shopping_basket</span>
+                            Min. $10
+                        </div>
+</div>
+</div>
+</div>
+<!-- Shop Card 3 -->
+<a class="block group cursor-pointer bg-surface-container-lowest rounded-lg overflow-hidden shadow-[0_4px_20px_rgba(19,27,46,0.04)] hover:shadow-[0_8_30px_rgba(19,27,46,0.08)] transition-all active:scale-[0.98]" href="{{DATA:SCREEN:SCREEN_6}}"><div class="relative h-48 w-full"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="neatly organized premium grocery store aisle with luxury packaging and warm ambient lighting on wooden shelves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6LwjzYy5_jR5G3bmeUatOIjz5kn85INWObWhM4LjteyW3JGh_RYuea-FKJrCeMdVq956eUNILJBmrzb56OwLC087LJ8157l-oBhxwH1IpV5IUTZ8aRIoaZ1cb1iQ7zUN0OaGLBh51vaev59nN_OaiTs8LWD7tPLYMc7YLwIVpFMnl0zykqxULRzykaHTrbpJPxSz8tuEfKTWd4n_q-y218aVhAVgN31K4rwA8S53qCELd4S3YdHO-kpL24OZs8MBRAiEGRpwtS6s"/><div class="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-1 shadow-sm"><span class="material-symbols-outlined text-secondary-container text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="text-sm font-bold text-on-surface">4.5</span></div><div class="absolute bottom-4 left-4"><span class="bg-secondary-container px-3 py-1 rounded-full text-[10px] font-bold text-white uppercase tracking-wider">Fastest Delivery</span></div></div><div class="p-5"><div class="flex justify-between items-start mb-1"><h3 class="text-lg font-bold text-on-surface">Urban Pantry Express</h3><span class="text-primary font-bold text-sm">10-15 min</span></div><p class="text-slate-500 text-sm mb-4">Daily essentials • Snacks • Quick meals</p><div class="flex items-center gap-4 text-xs font-semibold text-slate-400"><div class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">distance</span>0.8 km</div><div class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">shopping_basket</span>Min. $10</div></div></div></a>
+</section>
+</main>
+<!-- Navigation Shell (BottomNavBar) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-surface dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 shadow-[0_-4px_24px_rgba(19,27,46,0.08)] rounded-t-[32px] z-50">
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-2 hover:text-green-600 dark:hover:text-green-300 active:scale-90 transition-transform duration-150" href="{{DATA:SCREEN:SCREEN_2}}">
+<span class="material-symbols-outlined">home</span>
+<span class="font-plus-jakarta-sans text-[11px] font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-green-500 dark:bg-green-600 text-white rounded-full p-3 active:scale-90 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="font-plus-jakarta-sans text-[11px] font-semibold">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-2 hover:text-green-600 dark:hover:text-green-300 active:scale-90 transition-transform duration-150" href="{{DATA:SCREEN:SCREEN_6}}">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span class="font-plus-jakarta-sans text-[11px] font-semibold">Orders</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-2 hover:text-green-600 dark:hover:text-green-300 active:scale-90 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-plus-jakarta-sans text-[11px] font-semibold">Profile</span>
+</a>
+</nav>
+</body></html>

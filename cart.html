@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FreshRush - My Basket</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#dae2fd",
+              "on-error-container": "#93000a",
+              "on-background": "#131b2e",
+              "on-surface": "#131b2e",
+              "tertiary": "#006c49",
+              "inverse-on-surface": "#eef0ff",
+              "primary-container": "#22c55e",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#4edea3",
+              "on-tertiary": "#ffffff",
+              "primary-fixed-dim": "#4ae176",
+              "surface-container-low": "#f2f3ff",
+              "tertiary-container": "#28c38a",
+              "surface-container-highest": "#dae2fd",
+              "surface-tint": "#006e2f",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed-variant": "#005236",
+              "tertiary-fixed": "#6ffbbe",
+              "primary": "#006e2f",
+              "on-secondary-container": "#592600",
+              "inverse-primary": "#4ae176",
+              "on-primary-container": "#004b1e",
+              "on-secondary-fixed-variant": "#753400",
+              "outline-variant": "#bccbb9",
+              "surface": "#faf8ff",
+              "on-surface-variant": "#3d4a3d",
+              "on-primary-fixed-variant": "#005321",
+              "on-secondary-fixed": "#321200",
+              "surface-container-high": "#e2e7ff",
+              "surface-container": "#eaedff",
+              "on-tertiary-fixed": "#002113",
+              "secondary-fixed": "#ffdbc8",
+              "error-container": "#ffdad6",
+              "secondary-fixed-dim": "#ffb68b",
+              "on-tertiary-container": "#004a31",
+              "secondary": "#994700",
+              "on-primary": "#ffffff",
+              "error": "#ba1a1a",
+              "surface-dim": "#d2d9f4",
+              "primary-fixed": "#6bff8f",
+              "secondary-container": "#fb7800",
+              "inverse-surface": "#283044",
+              "on-secondary": "#ffffff",
+              "background": "#faf8ff",
+              "outline": "#6d7b6c",
+              "surface-bright": "#faf8ff",
+              "on-primary-fixed": "#002109"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-40">
+<!-- Top Navigation (Shell suppressed per rules for task-focused page) -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-6 py-5 max-w-lg mx-auto">
+<button class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-low text-on-surface active:scale-95 transition-transform duration-200">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-xl font-extrabold tracking-tight text-on-surface">My Basket</h1>
+<div class="w-12 h-12 flex items-center justify-center rounded-full bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined">more_horiz</span>
+</div>
+</div>
+</header>
+<main class="max-w-lg mx-auto px-6 pt-24 space-y-8">
+<!-- Fulfillment Toggle -->
+<section class="bg-surface-container-low p-1.5 rounded-full flex items-center">
+<button class="flex-1 py-3 px-6 rounded-full bg-primary-container text-on-primary-container font-bold text-sm transition-all shadow-sm">
+                Delivery
+            </button>
+<button class="flex-1 py-3 px-6 rounded-full text-on-surface-variant font-semibold text-sm hover:bg-surface-container-high transition-colors">
+                Self Pickup
+            </button>
+</section>
+<!-- Cart Items List -->
+<section class="space-y-6">
+<div class="flex items-center gap-4 group">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-highest">
+<img alt="Garden Tacos" class="w-full h-full object-cover" data-alt="Gourmet street tacos with vibrant green cilantro, purple onions, and fresh lime wedges on a rustic plate with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwHm8w4OM11csfizj1jiHR5gmNhAFr-65Z4cooZe81SKVvIItahuAKQQR7xEo75B-V0c01ml64LxmUvguSoD3AheT0H1Vkz4ypsnLIC9hI2G_otfvGe7fTuFes-DqeUxayjnnRwfCo56uTNEL5ZB-B6WRwT0tkY_mlenmx-WRYxsj1Hg_B0f4kxF8NKO_J0ESk4mXMDFzNJESg8B-zxuO9Hd3Xh33ACPQq00MGNY4EnNLaYIM_l5x0cDyQ9__h3rw0WzanXbn_4hM"/>
+</div>
+<div class="flex-1 space-y-1">
+<h3 class="font-bold text-lg leading-tight text-on-surface">Garden Tacos</h3>
+<p class="text-sm text-on-surface-variant font-medium">$12.50</p>
+<div class="flex items-center gap-3 pt-2">
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-surface-container-high text-on-surface active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="font-bold text-sm w-4 text-center">2</span>
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-primary-container text-on-primary-container active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<button class="text-on-surface-variant/40 hover:text-error transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-highest">
+<img alt="Truffle Fries" class="w-full h-full object-cover" data-alt="Crispy golden french fries dusted with truffle salt and parsley in a premium paper cone, macro shot with shallow depth of field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAehebInUYCyLUVQl_2Wt4fcn3CFzdbRqy8Yo5yGjhZYqRoQrMVaj6nLi8rgJ-gMoIzLgyoZ7Dm1FItpBPTOk-xXysNUxiM26RabclQwQvJsZX62zs1MRQLWzjpUw7LStMoTEbAYD8FHNxZlboPpAfddmw8lac6KaszLVYKzl72s6xStsX-_CCbvoCDQTbp3pvJKIgIbg-WqIRpsgOQGiYfmzGJ4_AShxlxtg_MarGEpx_u1goBnWdksfPKBs5HrsgkcfC6pA8SAk"/>
+</div>
+<div class="flex-1 space-y-1">
+<h3 class="font-bold text-lg leading-tight text-on-surface">Truffle Fries</h3>
+<p class="text-sm text-on-surface-variant font-medium">$8.00</p>
+<div class="flex items-center gap-3 pt-2">
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-surface-container-high text-on-surface active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="font-bold text-sm w-4 text-center">1</span>
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-primary-container text-on-primary-container active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<button class="text-on-surface-variant/40 hover:text-error transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container-highest">
+<img alt="Organic Smoothie" class="w-full h-full object-cover" data-alt="A tall glass of vibrant green kale and pineapple smoothie with a reusable straw, condensation on glass, bright airy morning kitchen setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUSMglukzRXfaPTCYudUlgkJTJN_51PYuQVvb882Z4t80dPYyiX5NspOGv3i5afbBoTu4p3hjrGAdJs-hptu2lm6rXrJbEhUiyqsQRDUMUQKZQd01swnvHi0bTbCnB-24d6MXOLRHxBgyGszmErrEb7qixKFVtndMUHRb1FkKqI9s7H5pCiFYt9GOwuU0jT5OfMUZpn2Zi_TKBHM6FCd47BOt0aub32VW6H2Haa9zM2LqayIT6DHhj-56zKttTmcCzxEBW7UFdvqA"/>
+</div>
+<div class="flex-1 space-y-1">
+<h3 class="font-bold text-lg leading-tight text-on-surface">Organic Smoothie</h3>
+<p class="text-sm text-on-surface-variant font-medium">$6.50</p>
+<div class="flex items-center gap-3 pt-2">
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-surface-container-high text-on-surface active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">remove</span>
+</button>
+<span class="font-bold text-sm w-4 text-center">1</span>
+<button class="w-8 h-8 flex items-center justify-center rounded-full bg-primary-container text-on-primary-container active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<button class="text-on-surface-variant/40 hover:text-error transition-colors">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</section>
+<!-- Promo Section -->
+<section class="bg-surface-container-lowest p-4 rounded-lg flex items-center gap-3 border border-outline-variant/20 shadow-sm">
+<span class="material-symbols-outlined text-secondary">confirmation_number</span>
+<input class="flex-1 bg-transparent border-none focus:ring-0 text-sm font-medium placeholder:text-on-surface-variant/50" placeholder="Apply Promo Code" type="text"/>
+<button class="text-primary font-bold text-sm px-4 py-2 hover:bg-surface-container-low rounded-full transition-colors">Apply</button>
+</section>
+<!-- Price Summary -->
+<section class="bg-surface-container-low rounded-lg p-6 space-y-4">
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant font-medium">Subtotal</span>
+<span class="font-bold">$39.50</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant font-medium">Delivery Fee</span>
+<span class="font-bold text-secondary">$2.99</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant font-medium">Service Tax (5%)</span>
+<span class="font-bold">$1.97</span>
+</div>
+<div class="pt-4 mt-2 border-t border-outline-variant/30 flex justify-between items-center">
+<span class="text-lg font-extrabold text-on-surface">Total</span>
+<span class="text-2xl font-extrabold text-primary">$44.46</span>
+</div>
+</section>
+</main>
+<!-- Fixed Checkout CTA -->
+<div class="fixed bottom-0 left-0 w-full bg-surface/90 backdrop-blur-xl pt-6 pb-10 px-6 max-w-lg mx-auto left-1/2 -translate-x-1/2 shadow-[0_-8px_32px_rgba(0,0,0,0.05)]">
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary py-4 rounded-full font-bold text-lg flex items-center justify-center gap-3 active:scale-[0.98] transition-all shadow-lg shadow-primary/20">
+<span>Proceed to Checkout</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+</button>
+</div>
+</body></html>

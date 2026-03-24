@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Order Confirmed | FreshRush</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-variant": "#dae2fd",
+                        "on-error-container": "#93000a",
+                        "on-background": "#131b2e",
+                        "on-surface": "#131b2e",
+                        "tertiary": "#006c49",
+                        "inverse-on-surface": "#eef0ff",
+                        "primary-container": "#22c55e",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#4ae176",
+                        "surface-container-low": "#f2f3ff",
+                        "tertiary-container": "#28c38a",
+                        "surface-container-highest": "#dae2fd",
+                        "surface-tint": "#006e2f",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "tertiary-fixed": "#6ffbbe",
+                        "primary": "#006e2f",
+                        "on-secondary-container": "#592600",
+                        "inverse-primary": "#4ae176",
+                        "on-primary-container": "#004b1e",
+                        "on-secondary-fixed-variant": "#753400",
+                        "outline-variant": "#bccbb9",
+                        "surface": "#faf8ff",
+                        "on-surface-variant": "#3d4a3d",
+                        "on-primary-fixed-variant": "#005321",
+                        "on-secondary-fixed": "#321200",
+                        "surface-container-high": "#e2e7ff",
+                        "surface-container": "#eaedff",
+                        "on-tertiary-fixed": "#002113",
+                        "secondary-fixed": "#ffdbc8",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#ffb68b",
+                        "on-tertiary-container": "#004a31",
+                        "secondary": "#994700",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#d2d9f4",
+                        "primary-fixed": "#6bff8f",
+                        "secondary-container": "#fb7800",
+                        "inverse-surface": "#283044",
+                        "on-secondary": "#ffffff",
+                        "background": "#faf8ff",
+                        "outline": "#6d7b6c",
+                        "surface-bright": "#faf8ff",
+                        "on-primary-fixed": "#002109"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Be Vietnam Pro"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<main class="min-h-screen flex flex-col items-center justify-center px-6 py-12 max-w-lg mx-auto">
+<div class="w-full flex flex-col items-center text-center space-y-8">
+<div class="relative">
+<div class="absolute inset-0 bg-primary-container/20 blur-3xl rounded-full scale-150"></div>
+<div class="relative bg-gradient-to-br from-primary to-primary-container w-32 h-32 rounded-xl flex items-center justify-center shadow-xl shadow-primary-container/30">
+<span class="material-symbols-outlined text-white text-6xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<div class="space-y-3">
+<h1 class="font-headline font-extrabold text-4xl tracking-tight text-on-surface">Order Confirmed!</h1>
+<p class="text-on-surface-variant text-lg leading-relaxed">Your fresh picks are being prepared and will be with you shortly.</p>
+</div>
+<div class="w-full bg-surface-container-low p-8 rounded-lg space-y-4">
+<div class="flex items-center justify-center space-x-3 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">schedule</span>
+<span class="font-headline font-bold text-xl">Estimated delivery: 30 mins</span>
+</div>
+<div class="h-px bg-outline-variant/20 w-full"></div>
+<p class="text-on-surface-variant text-sm font-medium">Order ID: #FR-829410</p>
+</div>
+<div class="w-full grid grid-cols-1 gap-4">
+<button class="flex items-center justify-center space-x-3 bg-gradient-to-r from-primary to-primary-container text-white py-4 px-8 rounded-DEFAULT font-headline font-bold shadow-lg shadow-primary-container/20 active:scale-95 transition-transform duration-150">
+<span class="material-symbols-outlined">shopping_bag</span>
+<span>View Orders</span>
+</button>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center space-x-2 bg-surface-container-high text-on-primary-container py-4 rounded-DEFAULT font-headline font-semibold hover:bg-surface-container-highest transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined text-primary">call</span>
+<span>Call Shop</span>
+</button>
+<button class="flex items-center justify-center space-x-2 bg-[#25D366]/10 text-[#075E54] py-4 rounded-DEFAULT font-headline font-semibold hover:bg-[#25D366]/20 transition-colors active:scale-95 duration-150">
+<span class="material-symbols-outlined">chat</span>
+<span>WhatsApp</span>
+</button>
+</div>
+<button class="text-on-surface-variant py-2 font-headline font-semibold hover:text-primary transition-colors">
+                    Back to Home
+                </button>
+</div>
+</div>
+<section class="mt-16 w-full">
+<h2 class="font-headline font-bold text-lg mb-6 text-on-surface px-2">While you wait...</h2>
+<div class="bg-surface-container-lowest p-4 rounded-lg shadow-sm flex items-center space-x-4 border border-outline-variant/10">
+<div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Fresh organic produce box" class="w-full h-full object-cover" data-alt="Close up of a wooden crate filled with vibrant green kale, red tomatoes, and orange carrots in bright natural morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdLZWIK4njXWA_S2HvyUta37UQR-pQGipCRRfzFnv4ZACL00MUe7mIEsJGiY3PV6WYNsRcATXVvO-eWVj81hr3bm80frEm2eGK6vnMOmJFaze_CethJKmtkQUWZ93cIQY3TZkO7e3WfhXl1d4aqktYdCNY255nEbUDkdlrxrnFxxKmYMDIKNo1SrUr9mALLwPFYx4Ba_CPBYof94oygFjUCaIOfTLph4nQ_kQ39ZvQCWrwhi1mmvnLZlMC2l-SQiYpRRKXew_hGas"/>
+</div>
+<div class="flex-1">
+<span class="inline-block px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-bold rounded-full mb-1">PROMO</span>
+<h3 class="font-headline font-bold text-sm text-on-surface">Get 20% off your next organic haul</h3>
+<p class="text-xs text-on-surface-variant mt-1">Use code: FRESH20</p>
+</div>
+<span class="material-symbols-outlined text-outline">chevron_right</span>
+</div>
+</section>
+</main>
+<div class="fixed bottom-0 left-0 w-full p-6 bg-gradient-to-t from-surface to-transparent pointer-events-none">
+<div class="max-w-lg mx-auto h-12"></div>
+</div>
+</body></html>
