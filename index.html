@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FreshRush | Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#dae2fd",
+              "on-error-container": "#93000a",
+              "on-background": "#131b2e",
+              "on-surface": "#131b2e",
+              "tertiary": "#006c49",
+              "inverse-on-surface": "#eef0ff",
+              "primary-container": "#22c55e",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-fixed-dim": "#4edea3",
+              "on-tertiary": "#ffffff",
+              "primary-fixed-dim": "#4ae176",
+              "surface-container-low": "#f2f3ff",
+              "tertiary-container": "#28c38a",
+              "surface-container-highest": "#dae2fd",
+              "surface-tint": "#006e2f",
+              "on-error": "#ffffff",
+              "on-tertiary-fixed-variant": "#005236",
+              "tertiary-fixed": "#6ffbbe",
+              "primary": "#006e2f",
+              "on-secondary-container": "#592600",
+              "inverse-primary": "#4ae176",
+              "on-primary-container": "#004b1e",
+              "on-secondary-fixed-variant": "#753400",
+              "outline-variant": "#bccbb9",
+              "surface": "#faf8ff",
+              "on-surface-variant": "#3d4a3d",
+              "on-primary-fixed-variant": "#005321",
+              "on-secondary-fixed": "#321200",
+              "surface-container-high": "#e2e7ff",
+              "surface-container": "#eaedff",
+              "on-tertiary-fixed": "#002113",
+              "secondary-fixed": "#ffdbc8",
+              "error-container": "#ffdad6",
+              "secondary-fixed-dim": "#ffb68b",
+              "on-tertiary-container": "#004a31",
+              "secondary": "#994700",
+              "on-primary": "#ffffff",
+              "error": "#ba1a1a",
+              "surface-dim": "#d2d9f4",
+              "primary-fixed": "#6bff8f",
+              "secondary-container": "#fb7800",
+              "inverse-surface": "#283044",
+              "on-secondary": "#ffffff",
+              "background": "#faf8ff",
+              "outline": "#6d7b6c",
+              "surface-bright": "#faf8ff",
+              "on-primary-fixed": "#002109"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; background-color: #faf8ff; color: #131b2e; }
+        .font-headline { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface selection:bg-primary-container/30">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-lg mx-auto">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-highest flex-shrink-0">
+<img alt="User Profile" data-alt="Close up portrait of a friendly young man with a neat beard smiling warmly in soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBglwwfnQvbmtw4FTiFJj9wWP1fBOYlFhSpyEfobstwGWRxqH4cI4EiHgFwHsrioJ8-ulloRxyYJQLDqefEbKB9PeTCcxlwnVD5P10Ycbb2SXIVaiyT3VKVzzMWfdrc9VJthlE-yQOUy0cFwmoEM3h6oTVFonHfOG-Up3UueiVugvodUapRo8udKQE7Yj9nvjT-yfOH-98h-WlumXLkwGiU2VfKfTFwEVSx-G2H_9NwTWQiPL7FoRKtE1oCfr5Hm-o-pCYL8KEY-GU"/>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Current Location</span>
+<div class="flex items-center gap-1 text-green-700 dark:text-green-500">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span class="font-headline font-bold text-sm truncate max-w-[140px]">Greenwich Village, NY</span>
+</div>
+</div>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors active:scale-95 duration-200 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-lg mx-auto">
+<!-- Hero Search Section -->
+<section class="mb-8">
+<h1 class="font-headline font-extrabold text-3xl mb-6 tracking-tight leading-tight text-on-surface">
+                Fresh ingredients,<br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">Delivered Fast.</span>
+</h1>
+<a class="relative group block" href="{{DATA:SCREEN:SCREEN_15}}">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-slate-400 group-focus-within:text-primary transition-colors">search</span>
+</div>
+<div class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-DEFAULT text-slate-400">Search for food, restaurants...</div>
+</a>
+</section>
+<!-- Categories Section -->
+<section class="mb-8">
+<div class="flex items-center justify-between mb-4">
+<h2 class="font-headline font-bold text-xl">Quick Filter</h2>
+<a class="text-primary font-semibold text-sm" href="{{DATA:SCREEN:SCREEN_15}}">View All</a>
+</div>
+<div class="flex gap-3 overflow-x-auto hide-scrollbar pb-2"><!-- Stable Category Buttons Row -->
+<div class="grid grid-cols-3 gap-3 w-full">
+<!-- Active: Restaurants -->
+<a class="flex flex-col items-center justify-center gap-2 py-4 bg-primary text-white rounded-2xl shadow-lg shadow-primary/20 transition-all active:scale-95" href="{{DATA:SCREEN:SCREEN_15}}">
+<div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+<span class="font-headline font-bold text-xs uppercase tracking-tight">Restaurants</span>
+</a>
+<!-- Inactive: Street Food -->
+<a class="flex flex-col items-center justify-center gap-2 py-4 bg-white dark:bg-slate-800 text-on-surface-variant rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 transition-all hover:border-primary/30 active:scale-95" href="{{DATA:SCREEN:SCREEN_15}}">
+<div class="w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px] text-primary">taco</span>
+</div>
+<span class="font-headline font-bold text-xs uppercase tracking-tight">Street Food</span>
+</a>
+<!-- Inactive: Groceries -->
+<a class="flex flex-col items-center justify-center gap-2 py-4 bg-white dark:bg-slate-800 text-on-surface-variant rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 transition-all hover:border-primary/30 active:scale-95" href="{{DATA:SCREEN:SCREEN_15}}">
+<div class="w-10 h-10 rounded-full bg-slate-50 dark:bg-slate-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px] text-primary">shopping_basket</span>
+</div>
+<span class="font-headline font-bold text-xs uppercase tracking-tight">Groceries</span>
+</a>
+</div></div>
+</section>
+<!-- Featured Banner (Asymmetric Layout) -->
+<section class="mb-10">
+<div class="relative w-full h-48 rounded-xl overflow-hidden bg-gradient-to-br from-primary to-primary-container p-8 flex flex-col justify-center">
+<div class="absolute right-0 top-0 w-1/2 h-full opacity-20 pointer-events-none">
+<img alt="Fresh Salad" class="w-full h-full object-cover rounded-l-full scale-125 translate-x-12" data-alt="Top view of a vibrant healthy salad bowl with fresh greens, radishes, and citrus in high-end editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJVTcpOeqkuNDa1-fQbaW7Cioi8AxsKvAAv3peL4O1CRcbq7o-Mo5VOJMF2CZJOCpFttum-8jo5MoPEcfuD3huOWDJ5-yu8ZL5gRjnHu4Cyz_ls7qIUzXSfM-OhWUZhUiJdKI-pNNjGBKgZVp2DNXL_xTLMkWBWBcOASVn5HccVRunlwAurhU43zW3lAe_mdsiqUOmEUjLQzH6NIPJfVNQmi6AmZTYj2p_RYi6KBVm-eTLyrHcEYCNoyetiVUkXpTmnxWywJo_O4s"/>
+</div>
+<div class="relative z-10">
+<span class="bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider mb-3 inline-block">Flash Deal</span>
+<h3 class="text-white font-headline font-extrabold text-2xl leading-tight">50% OFF on<br/>Organic Produce</h3>
+<button class="mt-4 bg-white text-primary px-5 py-2 rounded-full text-sm font-bold shadow-xl shadow-black/5 active:scale-95 transition-transform">Claim Now</button>
+</div>
+</div>
+</section>
+<!-- Nearby Shops List -->
+<section>
+<div class="flex items-center justify-between mb-6">
+<h2 class="font-headline font-bold text-xl">Nearby Hotspots</h2>
+<div class="flex gap-2">
+<button class="p-2 bg-surface-container-low rounded-full text-slate-500">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+<div class="space-y-8">
+<!-- Shop Card 1 -->
+<a class="group cursor-pointer block" href="{{DATA:SCREEN:SCREEN_6}}">
+<div class="relative w-full h-56 rounded-lg overflow-hidden mb-4 bg-surface-container-low">
+<img alt="The Green Bistro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Interior of a modern chic bistro with hanging plants, warm wooden tables, and elegant natural window lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6lsl0_rer6iRtJtEz55vWHWRLRx3NOcNuxxsKZyp5SAJq9Rik_9ljV8F_NJ5E-C9d9ONUbUuU5s_8MusKT1LBi5MVirXDUwNMNCQbpVl1UyvbDIfXFSzvftOPkOOvGOOcTUW4M4LmgZJaQRlE-hiucQxiDlqo0fJ0O6KLimCjNEQT5oz6bYvfwovZbV9aPEd0KJ69FUUeR6JA10WYN6DTd05cstIsQTleLRBoMoBPbthdildMEYu-czSX4coRvOJ8MYegU6n9dHE"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-secondary-container text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-xs">4.8</span>
+</div>
+<div class="absolute bottom-4 right-4 bg-primary px-3 py-1.5 rounded-full text-white text-[10px] font-bold tracking-wider uppercase shadow-lg shadow-primary/20">
+                            Verified
+                        </div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-lg text-on-surface">The Green Bistro</h3>
+<p class="text-sm text-slate-500 mb-2">Artisanal Bowls • Salads • Vegan</p>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1.5 text-slate-600 bg-surface-container-low px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="text-[11px] font-semibold">25-30 mins</span>
+</div>
+<div class="flex items-center gap-1.5 text-slate-600 bg-surface-container-low px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-[16px]">distance</span>
+<span class="text-[11px] font-semibold">1.2 km</span>
+</div>
+</div>
+</div>
+</div>
+</a>
+<!-- Shop Card 2 -->
+<a class="group cursor-pointer block" href="{{DATA:SCREEN:SCREEN_13}}">
+<div class="relative w-full h-56 rounded-lg overflow-hidden mb-4 bg-surface-container-low">
+<img alt="Midnight Tacos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A close up of three gourmet street tacos with fresh cilantro and lime on a rustic metal tray under warm night lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2QaCeFsY6idz9ym2X58KKoxLE1Yg69OEeBihYR4mRlwvdcmOEYzSoqJ78kJoUrMyvXLqiL7zy_INiwhQKMxM4xlti8eVP6YLUQdlwTg-5JzZD3J3hPCW1kfTT6tPiGuAf597FhsIz144JVzYVnL8Oul3DDvPkjLAENz4UCNlt22kNIqhjFjmT1qMzTLZo6lJla2-mtcO41WamVbnLY8HgMQ0vifKdRaZy6mx-EQOW10gUFY_yK0dyxfoYENr2ddwo3fehDdxiljo"/>
+<div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-secondary-container text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-xs">4.5</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-lg text-on-surface">Midnight Tacos</h3>
+<p class="text-sm text-slate-500 mb-2">Authentic Street Food • Spicy</p>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1.5 text-slate-600 bg-surface-container-low px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span class="text-[11px] font-semibold">15-20 mins</span>
+</div>
+<div class="flex items-center gap-1.5 text-slate-600 bg-surface-container-low px-2 py-1 rounded-full">
+<span class="material-symbols-outlined text-[16px]">distance</span>
+<span class="text-[11px] font-semibold">0.8 km</span>
+</div>
+</div>
+</div>
+<div class="bg-secondary-container/10 text-secondary px-2 py-1 rounded text-[10px] font-bold">POPULAR</div>
+</div>
+</a>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-surface dark:bg-slate-900 rounded-t-[32px] shadow-[0_-4px_24px_rgba(19,27,46,0.08)] border-t border-slate-100 dark:border-slate-800">
+<div class="flex justify-around items-center px-4 pb-6 pt-2 w-full max-w-lg mx-auto">
+<a class="flex flex-col items-center justify-center bg-green-500 dark:bg-green-600 text-white rounded-full p-3 active:scale-90 transition-transform duration-150" href="{{DATA:SCREEN:SCREEN_2}}">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-2 hover:text-green-600 dark:hover:text-green-300 active:scale-90 transition-transform duration-150" href="{{DATA:SCREEN:SCREEN_9}}">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="font-headline text-[11px] font-semibold mt-1">Search</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-2 hover:text-green-600 dark:hover:text-green-300 active:scale-90 transition-transform duration-150" href="{{DATA:SCREEN:SCREEN_8}}">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-headline text-[11px] font-semibold mt-1">Orders</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 p-2 hover:text-green-600 dark:hover:text-green-300 active:scale-90 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-headline text-[11px] font-semibold mt-1">Profile</span>
+</a>
+</div>
+</nav>
+<!-- FAB (Suppressed based on logic but available if needed, usually on Home for new order) -->
+<div class="fixed bottom-24 right-6 z-40 md:hidden">
+<a class="w-14 h-14 bg-gradient-to-br from-primary to-primary-container text-white rounded-full shadow-2xl shadow-primary/40 flex items-center justify-center active:scale-95 transition-transform" href="{{DATA:SCREEN:SCREEN_8}}">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">add_shopping_cart</span>
+</a>
+</div>
+</body></html>
